@@ -550,16 +550,17 @@ body {
   padding: 0px 0 20px 0px;
   margin: 0px;
   font: 14px/1.5 'Actor', "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f0e7d5;
+  color: #2A2829;
   font-weight: normal;
-  background: #252525;
+  background:#eee;
+  /*background: #252525;*/
   background-attachment: fixed !important;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
+/*  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
   background: -webkit-linear-gradient(#2a2a29, #1c1c1c);
   background: -moz-linear-gradient(#2a2a29, #1c1c1c);
   background: -o-linear-gradient(#2a2a29, #1c1c1c);
   background: -ms-linear-gradient(#2a2a29, #1c1c1c);
-  background: linear-gradient(#2a2a29, #1c1c1c);
+  background: linear-gradient(#2a2a29, #1c1c1c);*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -586,7 +587,7 @@ h2 {
 }
 
 h4, h5, h6 {
-  color: #e8e8e8;
+  color: #668284;
 }
 
 h3 {
@@ -594,11 +595,11 @@ h3 {
   line-height: 24px;
   font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-weight: normal;
-  color: #b6b6b6;
+  color: #668284;
 }
 
 a {
-  color: #ffcc00;
+  color: #E2B500;
   font-weight: 400;
   text-decoration: none;
 }
@@ -716,10 +717,11 @@ dt {
   z-index: 100;
   left: 0;
   top: 0px;
-  height: 60px;
+  height: 40px;
   width: 100%;
   position: fixed;
-  background: url(../images/nav-bg.gif) #353535;
+  /*background: url(../images/nav-bg.gif) #353535;*/
+  background: #493736;
   border-bottom: 4px solid #434343;
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
@@ -800,9 +802,9 @@ dt {
 
 section {
   max-width: 650px;
-  padding: 30px 0px 50px 0px;
-  margin: 20px 0;
-  margin-top: 70px;
+  padding: 10px 0px 50px 10px;
+/*  margin: 20px 0;
+  margin-top: 70px;*/
 }
 section #title {
   border: 0;
@@ -813,9 +815,9 @@ section #title {
 section #title h1 {
   font-family: 'OrbitronBold', 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 40px;
-  text-align: center;
-  line-height: 36px;
+  font-size: 35px;
+  /*text-align: center;*/
+  line-height: 15px;
 }
 section #title p {
   color: #d7cfbe;
