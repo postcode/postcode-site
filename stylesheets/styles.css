@@ -180,6 +180,8 @@ a:active {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  font: 'Jura';
+  font-weight: 800;
 }
 
 h2 {
@@ -531,7 +533,7 @@ table {
 body {
   padding: 0px 0 20px 0px;
   margin: 0px;
-  font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 'Actor', "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f0e7d5;
   font-weight: normal;
   background: #252525;
@@ -793,7 +795,7 @@ section #title {
   padding: 0 0 5px 0;
 }
 section #title h1 {
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Jura', 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 40px;
   text-align: center;
