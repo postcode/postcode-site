@@ -1,6 +1,9 @@
 body {
   /*background: #f5f5f5;*/
-  font-family: 'Allerta', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .button {
@@ -10,6 +13,16 @@ body {
 
 .button:hover{
   background:#2e88cc;
+}
+
+.highlight {
+  color: #888;
+  text-align: center;
+}
+
+.highlight h3 {
+  color: #407299;
+  font-weight: 400;
 }
 
 .panel {
@@ -38,7 +51,10 @@ body {
 }
 
 .sub-main {
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #888;
 }
 
 .top-bar {
