@@ -1,3 +1,10 @@
+/*
+ * Pallette
+ * Orange: #f37221
+ * Blue: #407299
+ * Grey: #888
+ */
+
 body {
   /*background: #f5f5f5;*/
   font-family: 'Helvetica Neue', sans-serif;
@@ -10,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .button {
   background: #407299;
-  border: none;
+  border: none !important;
 }
 
 .button:hover{
@@ -57,7 +64,27 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 25px;
   margin-bottom: 25px;
   text-align: center;
-  color: #888;
+  /* color: #888; */
+  color: #fff;
+  background-color: #407299;
+  padding: 20px;
+}
+
+.sub-main h6 {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+.sub-main a.button {
+  background-color: #5A8CB3;
+  border: 0;
+  margin: 0 0 5px 0;
+  box-shadow: none;
+}
+
+.sub-main .button:hover {
+  background-color: #73A5CC;
 }
 
 .top-bar {
