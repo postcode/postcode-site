@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+h1 {
+  color: #545454;
+  font-size: 8em;
+  letter-spacing: .1em;
+  text-align: left;
+  margin: 0em;
+  font-family: 'Montserrat', sans-serif;
+}
+h2 {
+  color: #545454;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0;
+  text-align: left;
+}
+h3{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 1em;
+  text-align: left;
+}
+h5 {
+  color: #545454;
+  font-size: .85em;
+  text-align: left;
+  margin-bottom: 0em;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 0em;
+}
+.jumbotron{
+  margin-bottom: 0px;
+}
+
+.btn-warning{
+  background: #F47E1F;
+  padding: .35em 1.5em;
+  font-size: 1.75em;
+  -moz-box-shadow:    0px 0px 7px 4px #ccc;
+  -webkit-box-shadow: 0px 0px 7px 4px #ccc;
+  box-shadow:         0px 0px 7px 4px #ccc;
+}
+.btn-warning:hover{
+  background: #EF8943;
+}
+
+.icons{
+	margin-top: -.2em; 
+	margin-bottom: .5em;"
+}
+.talking_points{
+  color: white;
+	margin-top: 1.5em; 
+	margin-bottom: .2em;
+}
+
+footer{
+	margin-bottom: 2em;
+}
+
+#twitter {
+  float: right;
+}
+
+.explain{
+	text-align: justify;
+}
