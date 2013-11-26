@@ -41,16 +41,40 @@ p {
   margin-bottom: 0px;
 }
 
-.btn-warning{
-  background: #F47E1F;
-  padding: .35em 1.5em;
-  font-size: 1.75em;
+.btn-inverse{
+  background: white;
+  border: 2px solid white;
   -moz-box-shadow:    0px 0px 7px 4px #ccc;
   -webkit-box-shadow: 0px 0px 7px 4px #ccc;
   box-shadow:         0px 0px 7px 4px #ccc;
+  font-size: 1.75em;
+  padding: .35em 1.5em;
 }
-.btn-warning:hover{
-  background: #EF8943;
+
+.btn-inverse:hover{
+  background: #F2F2F2;
+}
+
+.contact_button{
+background: white;
+border: 2px solid #545454;
+display: inline;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px; /* future proofing */
+padding: 10px 15px;
+}
+
+.title_tag{
+background: #545454; 
+color: white; 
+display: inline; 
+font-size: .75em; 
+padding: .25em .6em; 
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px; /* future proofing */
+
 }
 
 .icons{
