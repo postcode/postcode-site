@@ -1,6 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+.jumbotron{
+  margin-bottom: 0px;
+}
+
+/* Typography */
 h1 {
   color: #545454;
   font-size: 8em;
@@ -18,10 +23,13 @@ h2 {
   text-align: left;
 }
 h3{
-  font-family: 'Open Sans', sans-serif;
-  color: black;
-  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  color: #545454;
+  font-size: .9em;
   text-align: left;
+  margin-top: 10px;
+  padding: 0px;
+  line-height: 0em;
 }
 h5 {
   color: #545454;
@@ -37,10 +45,29 @@ p {
   text-align: left;
   margin-bottom: 0em;
 }
-.jumbotron{
-  margin-bottom: 0px;
+.name{
+  font-family: 'Montserrat', sans-serif;
+  color: #545454;
+  font-size: .9em;
+  text-align: left;
+  margin-top: 5px;
+  padding: 0px;
+  line-height: 1em;
 }
+.position{
+  color: #A1A1A1;
+  font-style: italic;
+  font-size: .7em;
+  line-height: 1em;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  padding: 0px;  
+}
+/* Links */
 
+
+
+/* Buttons */
 .btn-inverse{
   background: white;
   border: 2px solid white;
