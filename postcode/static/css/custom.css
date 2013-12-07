@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.jumbotron{
+  margin-bottom: 0px;
+}
+
+/* Typography */
+h1 {
+  color: #545454;
+  font-size: 8em;
+  letter-spacing: .1em;
+  text-align: left;
+  margin: 0em;
+  font-family: 'Montserrat', sans-serif;
+}
+h2 {
+  color: #545454;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0;
+  text-align: left;
+}
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #545454;
+  font-size: .9em;
+  text-align: left;
+  margin-top: 10px;
+  padding: 0px;
+  line-height: 0em;
+}
+h5 {
+  color: #545454;
+  font-size: .85em;
+  text-align: left;
+  margin-bottom: 0em;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 0em;
+}
+.name{
+  font-family: 'Montserrat', sans-serif;
+  color: #545454;
+  font-size: .9em;
+  text-align: left;
+  margin-top: 5px;
+  padding: 0px;
+  line-height: 1em;
+}
+.position{
+  color: #A1A1A1;
+  font-style: italic;
+  font-size: .7em;
+  line-height: 1em;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  padding: 0px;  
+}
+/* Links */
+
+
+
+/* Buttons */
+.btn-inverse{
+  background: white;
+  border: 2px solid white;
+  -moz-box-shadow:    0px 0px 7px 4px #ccc;
+  -webkit-box-shadow: 0px 0px 7px 4px #ccc;
+  box-shadow:         0px 0px 7px 4px #ccc;
+  font-size: 1.75em;
+  padding: .35em 1.5em;
+}
+
+.btn-inverse:hover{
+  background: #F2F2F2;
+}
+
+.contact_button{
+background: white;
+border: 2px solid #545454;
+display: inline;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px; /* future proofing */
+padding: 10px 15px;
+}
+
+.title_tag{
+background: #545454; 
+color: white; 
+display: inline; 
+font-size: .75em; 
+padding: .25em .6em; 
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px; /* future proofing */
+
+}
+
+.icons{
+	margin-top: -.2em; 
+	margin-bottom: .5em;"
+}
+.talking_points{
+  color: white;
+	margin-top: 1.5em; 
+	margin-bottom: .2em;
+}
+
+footer{
+	margin-bottom: 2em;
+}
+
+#twitter {
+  float: right;
+}
+
+.explain{
+	text-align: justify;
+}
