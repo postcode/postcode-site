@@ -6,6 +6,9 @@ routing = {
 #   function_name: url
 	'index':{
 		'url': '/'
+	},
+	'any_page':{
+		'url': '/<page>'
 	}
 }
 

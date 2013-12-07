@@ -9,3 +9,8 @@ def index():
 	return render_template('index.html')
 
 
+def any_page(page):
+	try:
+		return render_template('%s.html' %(page))
+	except:
+		return index()
