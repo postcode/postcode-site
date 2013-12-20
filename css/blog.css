@@ -1,0 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.header{
+  border-bottom: 1px solid #D9D6D4;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.tumblr_post{
+  border-bottom: 1px solid #E6E3E1;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+}
+
+.tumblr_title{
+  color: #545454;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.tumblr_body{
+  padding-top: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.tumblr_caption{
+  padding-top: 8px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ol{
+  list-style-type: none;
+}
+
+
