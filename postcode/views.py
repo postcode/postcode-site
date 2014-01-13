@@ -3,6 +3,7 @@
 
 from flask import render_template
 from postcode import app
+from jinja_filters import *
 
 # Submitting a new request
 def index():
@@ -14,3 +15,4 @@ def any_page(page):
 		return render_template('%s.html' %(page))
 	except:
 		return index()
+
