@@ -17,9 +17,8 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 h2 {
-  color: #545454;
-  font-size: 1.5em;
-  font-weight: bold;
+  color: #939597;
+  font-size: 1.15em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0;
   text-align: left;
@@ -42,7 +41,7 @@ h5 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  color: black;
+  color: #939597;
   font-size: 1em;
   text-align: left;
   margin-bottom: 0em;
@@ -79,26 +78,8 @@ p {
 .navbar .nav > li > a {
     color: #939597;
     font-family:'Montserrat', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.15em;
 }
-.
-/* caret */
-.navbar-default .navbar-nav > .dropdown > a .caret {
-    border-top-color: #777;
-    border-bottom-color: #777;
-}
-.navbar-default .navbar-nav > .dropdown > a:hover .caret,
-.navbar-default .navbar-nav > .dropdown > a:focus .caret {
-    border-top-color: #333;
-    border-bottom-color: #333;
-}
-.navbar-default .navbar-nav > .open > a .caret, 
-.navbar-default .navbar-nav > .open > a:hover .caret, 
-.navbar-default .navbar-nav > .open > a:focus .caret {
-    border-top-color: #555;
-    border-bottom-color: #555;
-}
-
 
 /* Products */
 
@@ -172,6 +153,11 @@ border-radius: 3px; /* future proofing */
 
 footer{
 	margin-bottom: 2em;
+  background: #F4F4F4;
+  border-top: 4px solid #86C9D9;
+  margin-bottom: 1.5em;
+  padding: 15px;
+  padding-bottom: 25px;
 }
 
 #twitter {
