@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 .jumbotron{
   margin-bottom: 0px;
@@ -63,9 +65,24 @@ p {
   margin-bottom: 8px;
   padding: 0px;  
 }
-/* Links */
+/* Products */
 
-
+.recordtrac{
+  font-family: 'Lato', sans-serif;
+  background: #00889E;
+  color: white;
+ 
+}
+.promptly{
+  font-family: 'Open Sans', sans-serif;
+  color: #EF821E;
+  background: white;
+}
+.cityvoice{
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  background: #6CC5AD;
+}
 
 /* Buttons */
 .btn-inverse{
@@ -109,10 +126,13 @@ border-radius: 3px; /* future proofing */
 	margin-top: -.2em; 
 	margin-bottom: .5em;"
 }
-.talking_points{
-  color: white;
-	margin-top: 1.5em; 
+.products{
+	margin-top: 1em; 
 	margin-bottom: .2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.0;
+  padding: 10px;
 }
 
 footer{
