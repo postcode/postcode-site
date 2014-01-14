@@ -93,9 +93,10 @@ padding: 10px 15px;
 }
 
 .title_tag{
-background: #545454; 
+background: #939597; 
 color: white; 
 display: inline; 
+font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
 padding: .25em .6em; 
 -moz-border-radius: 3px;
