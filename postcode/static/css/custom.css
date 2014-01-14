@@ -65,6 +65,41 @@ p {
   margin-bottom: 8px;
   padding: 0px;  
 }
+
+/* Header*/
+
+/* navbar */
+.navbar-default {
+    background-color: #FFF;
+    border-color: #FFF;
+    opacity:0.98;
+    filter:alpha(opacity=98); /* For IE8 and earlier */
+}
+/* link */
+.navbar .nav > li > a {
+    color: #939597;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.1em;
+}
+.
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+
 /* Products */
 
 .recordtrac{
