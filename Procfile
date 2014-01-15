@@ -1,1 +1,1 @@
-web: gunicorn postcode.routing:app
+web: newrelic-admin run-program gunicorn postcode.routing:app
