@@ -17,9 +17,8 @@ h1 {
   font-family: 'Montserrat', sans-serif;
 }
 h2 {
-  color: #545454;
-  font-size: 1.5em;
-  font-weight: bold;
+  color: #939597;
+  font-size: 1.15em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0;
   text-align: left;
@@ -42,7 +41,7 @@ h5 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  color: black;
+  color: #939597;
   font-size: 1em;
   text-align: left;
   margin-bottom: 0em;
@@ -65,6 +64,26 @@ p {
   margin-bottom: 8px;
   padding: 0px;  
 }
+.jumbotron{
+  padding: 3.5em;
+}
+
+/* Header*/
+
+/* navbar */
+.navbar-default {
+    background-color: #FFF;
+    border-color: #FFF;
+    opacity:0.98;
+    filter:alpha(opacity=98); /* For IE8 and earlier */
+}
+/* link */
+.navbar .nav > li > a {
+    color: #939597;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.15em;
+}
+
 /* Products */
 
 .recordtrac{
@@ -83,8 +102,16 @@ p {
   color: white;
   background: #6CC5AD;
 }
+.products{
+  margin-top: 1em; 
+  margin-bottom: .2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.0;
+  padding: 10px;
+}
 
-/* Buttons */
+/* Buttons & Links */
 .btn-inverse{
   background: white;
   border: 2px solid white;
@@ -111,6 +138,7 @@ padding: 10px 15px;
 
 .title_tag{
 background: #939597; 
+border: none;
 color: white; 
 display: inline; 
 font-family: 'Montserrat', sans-serif;
@@ -119,24 +147,18 @@ padding: .25em .6em;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 border-radius: 3px; /* future proofing */
-
 }
 
-.icons{
-	margin-top: -.2em; 
-	margin-bottom: .5em;"
-}
-.products{
-	margin-top: 1em; 
-	margin-bottom: .2em;
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.0;
-  padding: 10px;
-}
+/* footer */
+
 
 footer{
 	margin-bottom: 2em;
+  background: #F4F4F4;
+  border-top: 4px solid #86C9D9;
+  margin-bottom: 1.5em;
+  padding: 15px;
+  padding-bottom: 25px;
 }
 
 #twitter {
