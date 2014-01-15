@@ -39,14 +39,14 @@
             RecordTrac
         </div>
         <p>{{"recordtrac" | get_product("blurb") }}</p>
-        <a href="">Learn More</a>
+        <a href="{{ url_for('static', filename='content/recordtrac.pdf') }}">Learn More</a>
       </div>
       <div class="col-lg-4">
         <div class="products promptly">
           Promptly
         </div>
         <p>{{"promptly" | get_product("blurb") }}</p>
-        <a href="">Learn More</a>
+        <a href="{{ url_for('static', filename='content/promptly.pdf') }}">Learn More</a>
       </div>
       <div class="col-lg-4">
         <div class="products cityvoice">
@@ -54,7 +54,7 @@
         </div>
         <p>{{"cityvoice" | get_product("blurb") }}
         </p>
-        <a href="">Learn More</a>
+        <a href="{{ url_for('static', filename='content/cityvoice.pdf') }}">Learn More</a>
       </div>
     </div> 
   </div>
