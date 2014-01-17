@@ -9,6 +9,9 @@ routing = {
 	},
 	'any_page':{
 		'url': '/<page>'
+	},
+		'product_page':{
+		'url': '/products/<string:product>'
 	}
 }
 

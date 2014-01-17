@@ -11,18 +11,20 @@
       </div>
       <div class="col-lg-6">
         <h1 style="padding-top: .58em; padding-bottom: .05em;">DELIVERING<br> CIVIC<br> TECHNOLOGY</h1>
-        <div class="title_tag" style="margin-left: .6em;"><div style="display: inline;"> LEARN MORE &nbsp;</div> <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/down_arrow.png') }}" alt="v"></div>
+        <div class="title_tag" style="margin-left: .6em;"><div style="display: inline;"> <a href="#about" class="banner">LEARN MORE</a> &nbsp;</div> <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/down_arrow.png') }}" alt="v"></div>
       </div>
     </div> 
   </div>
 </div>
-<div class="jumbotron" style="background:none;">
+<div id ="about" class="jumbotron" style="background: none;">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <div class="title_tag" style="float:right; line-height: 1;">ABOUT</div>
-        <br>
-        <p style="text-align: right; margin-bottom: 1.5em;">We are a mission driven company that provides technology applications and services to local governments and community organizations. We focus on open source software and user-centred design. Our goal is to help the public sector operate and engage residents more effectively. </p>
+        <div style="background: white; padding: 12px;">
+          <div class="title_tag" style="float:right; line-height: 1;">ABOUT</div>
+          <br>
+          <p style="text-align: right; margin-bottom: 0em;">We are a mission driven company that provides technology applications and services to local governments and community organizations. We focus on open source software and user-centred design. Our goal is to help the public sector operate and engage residents more effectively. </p>
+        </div>
       </div>
       <div class="col-lg-6">
         <img style="padding: 0px 15px;" class="img-responsive" src="{{ url_for('static', filename='images/postcode_group.jpg') }}" alt="POSTCODE TEAM">
@@ -39,14 +41,14 @@
             RecordTrac
         </div>
         <p>{{"recordtrac" | get_product("blurb") }}</p>
-        <a href="{{ url_for('static', filename='content/recordtrac.pdf') }}">Learn More</a>
+        <a href="/products/recordtrac">Learn More</a>
       </div>
       <div class="col-lg-4">
         <div class="products promptly">
           Promptly
         </div>
         <p>{{"promptly" | get_product("blurb") }}</p>
-        <a href="{{ url_for('static', filename='content/promptly.pdf') }}">Learn More</a>
+        <a href="/products/promptly">Learn More</a>
       </div>
       <div class="col-lg-4">
         <div class="products cityvoice">
@@ -54,22 +56,21 @@
         </div>
         <p>{{"cityvoice" | get_product("blurb") }}
         </p>
-        <a href="{{ url_for('static', filename='content/cityvoice.pdf') }}">Learn More</a>
+        <a href="/products/cityvoice">Learn More</a>
       </div>
     </div> 
   </div>
 </div>
-<div class="jumbotron" style="background:none;">
+<div id = "services" class="jumbotron" style="background: none;">
   <div class="container">
-    <div class="row " style="padding-top: 0em; padding-bottom: 2em;">
-      <div class="col-lg-6">
-        <div style="background:#939597; width:450px; height: 300px;"></div>
-      </div>
-      <div class="col-lg-6">
-        <div style="line-height: 1.0; margin-bottom: 1em; padding-top: 3em;">
-          <div class="title_tag">SERVICES</div>
+    <div class="row " style="padding-top: 0em;">
+      <div class="col-lg-6 col-lg-offset-6">
+        <div style="background: white; padding: 12px;">
+          <div style="line-height: 1.0; margin-bottom: 1em;">
+            <div class="title_tag">SERVICES</div>
+          </div>
+          <p>In addition to the products we develop and support we also provide contract and consulting services for local governments. We offer full service research, design, development, implementation, and maintenance for tech solutions.</p>
         </div>
-        <p>In addition to the products we develop and support we also provide contract and consulting services for local governments. We offer full service research, design, development, implementation, and maintenance for tech solutions.</p>
       </div>
     </div> 
   </div>
