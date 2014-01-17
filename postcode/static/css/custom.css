@@ -79,6 +79,11 @@ p {
     filter:alpha(opacity=98); /* For IE8 and earlier */
 }
 /* link */
+a:link {color: #86C9D9;}     
+a:visited {color: #86C9D9;}  
+a:hover {color:#939597; text-decoration: none;}  
+a:active {color: white;} 
+
 .navbar .nav > li > a {
     color: #939597;
     font-family:'Montserrat', sans-serif;
