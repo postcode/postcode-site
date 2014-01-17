@@ -1,5 +1,69 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class = "container" > This is the about page</div>
+<!-- The breaks are here because of the sticky header.-->
+<div class="jumbotron" style="background:none;">
+  <div class="container">
+    <div class="row " style="padding-top: 3em; padding-bottom: 0em;">
+      <div class="col-lg-6">
+        <div style="float:right; line-height: 1.0;">
+          <div class="title_tag">BACKGROUND</div>
+        </div>
+        <br>
+        <p style="text-align: right;">We are a mission driven company that provides technology applications and services to local governments. We focus on open source software and user-centered design. Our goal is to help the public sector operate and engage residents more effectively. </p>
+      </div>
+      <div class="col-lg-6">
+        <div style="background:#939597; width:450px; height: 300px;"></div>
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="jumbotron" style="background:white; padding-top: 2em; padding-bottom: 3em;">
+  <div class="container" >
+    <div style="margin-bottom: 40px;">
+      <div class="title_tag">OUR TEAM</div> 
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/Andy_Hull-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
+        <div class="name">ANDY HULL</div>
+        <div class="position">Director, Co-founder</div>
+        <p style="font-size: .7em; background: white; text-align: justify;"><!--Andy is a web developer and a Geographic Information Systems analyst with ten years of experience working with government agencies, academic research groups, libraries, non-profits, and think tanks to create user centered web applications. He holds a BA in Geography and an MS in Information Science, both from the University of North Carolina.--><a href="mailto:andy@postcode.io" target="_blank">andy@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/andyhull3" target="_blank">@andyhull3</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/CJ_Bryan-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
+        <div class="name">CJ Bryan</div> 
+        <div class="position">Engineering, Co-founder</div>
+         <p style="font-size: .7em; background: white; text-align: justify;"><!--CJ is a web developer and software consultant. Most recently, he rebuilt the online publishing platform for the Society for Cultural Anthropology. Previously he worked with Fight for the Future creating online campaign platforms. He spends the rest of his time riding bikes and hacking on small machines.--> <a href="mailto:cj@postcode.io" target="_blank">cj@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/waltz" target="_blank">@waltz</a></p>
+
+      </div>
+      <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/Cris_Cristina1-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
+        <div class="name">CRIS CRISTINA</div> 
+               <div class="position">Design, Co-founder</div>
+         <p style="font-size: .7em; background: white; text-align: justify;"><!--Cris is a user experience designer originally from New Orleans. Most recently, he held the position of design manager at Cisco, developing next generation collaboration products for mobile and web platforms. He has worked as a design strategist, user researcher, and interaction designer. With a background in biomedical engineering and human factors, he spent six years designing aeronautical interfaces for the U.S. Navy.--> <a href="mailto:cris@postcode.io" target="_blank">cris@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/criscristina" target="_blank">@criscristina</a></p> 
+      </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/Richa_Agarwal_Headshot-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
+        <div class="name">RICHA AGARWAL</div> 
+        <div class="position">Engineering, Co-founder</div>
+          <p style="font-size: .7em; background: white; text-align: justify;"><!-- Richa is a software developer and lover of technology, civic engagement, and the outdoors. Most recently, she has been working to help re-elect Obama from the campaign headquarters. When she’s not coding, you can find her at a local coffee shop or out on the trails. Richa holds a BA in Philosophy and Psychology from Colgate University, and an MS in Computer Science from the University of Illinois at Chicago.--> <a href="mailto:richa@postcode.io" target="_blank">richa@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/richaaaa" target="_blank">@richaaaa</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/Reed_Duecy_Gibbs-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
+        <div class="name">REED DUECY-GIBBS</div>              
+        <div class="position">Design, Co-founder</div>
+         <p style="font-size: .7em; background: white; text-align: justify;"><!--Reed is an urbanist and interdisciplinary designer and is the co-founder of OpenUrban, a crowd sourced map and forum on current urban development. He has worked as an architect and urban designer, and as a policy researcher for the City of Seattle. Most recently his work was on display in the Istanbul Design Biennial’s Ad-Hocracy exhibition. Reed is a former Fulbright Scholar and holds a Masters of Architecture from the Rhode Island School of Design.--> <a href="mailto:reed@postcode.io" target="_blank">reed@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/rduecyg" target="_blank">@rduecyg</a></p>
+      </div>
+      <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/Tamara_Manik-Perlman-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
+        <div class="name">TAMARA MANIK-PERLMAN</div> 
+        <div class="position">Engineering, Co-founder</div>
+       <p style="font-size: .7em; background: white; text-align: justify;"><!-- Tamara is passionate about geodata visualization, interactive art, local food, national parks, and inclusive urban citizenship. Most recently, she worked at Azavea where she managed the development of web and mobile applications, and lead the spatial analysis and UX design teams. Tamara has worked at environmental and health non-profits and is particularly interested in the role of immigrants in shaping urban development. She studied Anthropology at Swarthmore College and did graduate work in Geography at Temple University. --> <a href="mailto:tamara@postcode.io" target="_blank">tamara@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/TamaraMP" target="_blank">@TamaraMP</a></p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock content %}

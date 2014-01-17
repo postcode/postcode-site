@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 .jumbotron{
   margin-bottom: 0px;
@@ -9,15 +11,14 @@
 h1 {
   color: #545454;
   font-size: 8em;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
   text-align: left;
   margin: 0em;
   font-family: 'Montserrat', sans-serif;
 }
 h2 {
-  color: #545454;
-  font-size: 1.5em;
-  font-weight: bold;
+  color: #939597;
+  font-size: 1.15em;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0;
   text-align: left;
@@ -40,7 +41,7 @@ h5 {
 
 p {
   font-family: 'Open Sans', sans-serif;
-  color: black;
+  color: #939597;
   font-size: 1em;
   text-align: left;
   margin-bottom: 0em;
@@ -63,11 +64,65 @@ p {
   margin-bottom: 8px;
   padding: 0px;  
 }
-/* Links */
+.jumbotron{
+  padding: 50px;
+  background-repeat: no-repeat;
+}
 
+/* Header*/
 
+/* navbar */
+.navbar-default {
+    background-color: #FFF;
+    border-color: #FFF;
+    opacity:0.98;
+    filter:alpha(opacity=98); /* For IE8 and earlier */
+}
+/* link */
+a:link {color: #86C9D9;}     
+a:visited {color: #86C9D9;}  
+a:hover {color:#939597; text-decoration: none;}  
+a:active {color: white;} 
 
-/* Buttons */
+.navbar .nav > li > a {
+    color: #939597;
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.15em;
+}
+
+a.banner:link {color: white;}     
+a.banner:visited {color: white;}  
+a.banner:hover {color:#D9D9D9; text-decoration: none;}  
+a.banner:active {color: white;}  
+
+/* Products */
+
+.recordtrac{
+  font-family: 'Lato', sans-serif;
+  background: #00889E;
+  color: white;
+ 
+}
+.promptly{
+  font-family: 'Open Sans', sans-serif;
+  color: #EF821E;
+  background: white;
+}
+.cityvoice{
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  background: #6CC5AD;
+}
+.products{
+  margin-top: 1em; 
+  margin-bottom: .2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1.0;
+  padding: 10px;
+}
+
+/* Buttons & Links */
 .btn-inverse{
   background: white;
   border: 2px solid white;
@@ -93,29 +148,28 @@ padding: 10px 15px;
 }
 
 .title_tag{
-background: #545454; 
+background: #939597; 
+border: none;
 color: white; 
 display: inline; 
+font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
 padding: .25em .6em; 
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 border-radius: 3px; /* future proofing */
-
 }
 
-.icons{
-	margin-top: -.2em; 
-	margin-bottom: .5em;"
-}
-.talking_points{
-  color: white;
-	margin-top: 1.5em; 
-	margin-bottom: .2em;
-}
+/* footer */
+
 
 footer{
 	margin-bottom: 2em;
+  background: #F4F4F4;
+  border-top: 4px solid #86C9D9;
+  margin-bottom: 1.5em;
+  padding: 15px;
+  padding-bottom: 25px;
 }
 
 #twitter {

@@ -24,18 +24,30 @@
   <body>
   <div class="container" style="padding-bottom: 5em;">
   {% block header %}
-    <div class="row">
-      <div class="span12">
-        <img style="margin-top: 7em; padding: 0px 15px;" class="img-responsive" src="{{ url_for('static', filename='images/postcode_logo_binary_text.png') }}" alt="POSTCODE">
-      </div>
-    </div>
-    <p style="font-size: 1.6em; letter-spacing: 8px; margin: .3em 0em 2em 0em;">DELIVERING CIVIC TECHNOLOGY &#149; SINCE 2013</p> 
-  </div>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <ul class="nav nav-tabs pull-left">
+      <li><a href="/"><span style="color:#545454;">POST<strong>CODE</strong></span></a></li>
+      </ul>
+      <ul class="nav nav-tabs pull-right">
+      <li><a href="#about">ABOUT</a></li>
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS<b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a href="/products/recordtrac">RecordTrac</a></li>
+        <li><a href="/products/promptly">Promptly</a></li>
+        <li><a href="/products/cityvoice">CityVoice</a></li>
+      </ul>
+      </li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="http://blog.postcode.io">BLOG</a></li>
+      <li><a href='https://docs.google.com/forms/d/1a0fFreqxl-1S5KKwdM54WN-wqiYCeegsMwDte0FbDT0/viewform' target="_blank"><span style="color:#545454; font-weight:bold;">CONTACT</span></a></li>
+    </ul>
+  </nav>
     {% endblock header %}
     {% block content %} 
-  <div class="jumbotron" style="background: url(static/images/cfa_office.jpg);">
+  <div class="jumbotron">
     <div class="container">
-      <div class="title_tag">ABOUT</div> 
+      <div class="title_tag" id="about">ABOUT</div> 
       <div class="row " style="padding-top: 0em; padding-bottom: 2em;">
         <div class="col-lg-4">
             <div class="talking_points">
@@ -110,16 +122,35 @@
     </div>
     {% endblock content %}
     {% block footer %}
-    <div class="container">
-      <hr>
+
       <footer>
-        <div>     
-          &copy; POSTCODE, Inc. &nbsp;2013 &nbsp;&nbsp;<a href="mailto:info@postcode.io">info@postcode.io</a><span style="float:right">
-          <a href="https://twitter.com/postcode_io" class="twitter-follow-button" data-show-count="false">Follow @postcode_io</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></span>
-        </div>
+          <div class="container">
+            <div class="col-xs-4">
+              <h2>CONTACT</h2>
+              <p>
+                155 9th St.</br>San Francisco, CA 94103</br><a href="mailto:info@postcode.io">info at postcode dot io</a></p>
+            </div>
+            <div class="col-xs-4">
+              <h2>BLOG</h2>
+              <p><a href="http://blog.postcode.io/" target="_blank">Go to Blog</a></p>
+            </div>
+            <!-- <div class="col-xs-3">
+              <h2>TWITTER FEED</h2>
+              <p>Pull a tweet. </br> <a href="https://twitter.com/postcode_io" class="twitter-follow-button" data-show-count="false">Follow @postcode_io</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></span>
+                </p>
+            </div> -->
+            <div class="col-xs-4">
+              <h2>FOLLOW</h2>
+              <p>
+                <a href="https://twitter.com/postcode_io" target="_blank"><img src="{{ url_for('static', filename='images/twitter_logo.png') }}"></a>&nbsp; &nbsp;
+                <a href="https://www.facebook.com/postcode.io" target="_blank"><img src="{{ url_for('static', filename='images/facebook_logo.png') }}"></a>&nbsp; &nbsp;
+                <a href="http://www.linkedin.com/company/postcode-io" target="_blank"><img src="{{ url_for('static', filename='images/linkedin_logo.png') }}"></a>&nbsp; &nbsp;
+              </p>
+            </div>
+          </div> 
       </footer>
-    </div>
+      <p style="padding-left: 1.5em;">&#169; PostCode LLC, 2013</p>
     {% endblock footer %}
 
     <!-- Bootstrap core JavaScript
