@@ -65,7 +65,8 @@ p {
   padding: 0px;  
 }
 .jumbotron{
-  padding: 3.5em;
+  padding: 50px;
+  background-repeat: no-repeat;
 }
 
 /* Header*/
@@ -83,6 +84,11 @@ p {
     font-family:'Montserrat', sans-serif;
     font-size: 1.15em;
 }
+
+a.banner:link {color: white;}     
+a.banner:visited {color: white;}  
+a.banner:hover {color:#D9D9D9; text-decoration: none;}  
+a.banner:active {color: white;}  
 
 /* Products */
 
