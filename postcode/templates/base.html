@@ -50,7 +50,8 @@
     {% block footer %}
 
       <footer>
-          <div class="container">
+        <div class="container">
+          <div class="row">
             <div class="col-xs-4">
               <h2>CONTACT</h2>
               <p>
@@ -72,9 +73,15 @@
                 <a class="social" href="https://www.facebook.com/postcode.io" target="_blank"><img src="{{ url_for('static', filename='images/facebook_logo.png') }}"></a>&nbsp; &nbsp;
                 <a class="social" href="http://www.linkedin.com/company/postcode-io" target="_blank"><img src="{{ url_for('static', filename='images/linkedin_logo.png') }}"></a>&nbsp; &nbsp;
             </div>
-          </div> 
+          </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <p style="font-size: .75em; padding-top: 4em;">&#169; PostCode LLC, 2013</p>
+            </div>
+          </div>
+        </div>
       </footer>
-      <p style="padding-left: 2.5em; padding-bottom: 1.5em;">&#169; PostCode LLC, 2013</p>
+      
     {% endblock footer %}
 
     <!-- Bootstrap core JavaScript
