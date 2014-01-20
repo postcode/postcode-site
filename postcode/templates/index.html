@@ -7,68 +7,75 @@
   <div class="container">
     <div class="row" style="padding-top: 13em; padding-bottom: 1.5em;">
       <div class="col-lg-6">
-          <img style="float:right; padding: 0px 15px;" class="img-responsive" src="{{ url_for('static', filename='images/postcode_logo_400px.png') }}" alt="POSTCODE">
+          <img style="float:right; padding-bottom: 15px;" class="img-responsive" src="{{ url_for('static', filename='images/postcode_logo_400px.png') }}" alt="POSTCODE">
       </div>
       <div class="col-lg-6" style="padding-top: 1.5em;">
           <h1 class="banner_text" style="margin-top: 5em;">DELIVERING</h1><br><h1 class="banner_text">CIVIC</h1><br><h1 class="banner_text">TECHNOLOGY</h1>
         </div>
-        <div class="title_tag" style="margin-left: 1em;"><div style="display: inline;"> <a href="#about" class="banner">LEARN MORE</a> &nbsp;</div> <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/down_arrow.png') }}" alt="v"></div>
+        <div class="title_tag_wht" style="margin-left: 1em;"><div style="display: inline;"> <a href="#about" class="banner">LEARN MORE</a> &nbsp;</div> <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/down_arrow.png') }}" alt="v"></div>
       </div>
     </div> 
   </div>
 </div>
-<div id ="about" class="jumbotron" style="background: none;">
+<div id ="about" class="jumbotron" style="background: none; border-top: 12px solid white;">
   <div class="container">
-    <div class="row" style="margin-top: 3em; margin-bottom: 3em;">
-      <div class="col-lg-6">
-        <div style="background: white; padding: 12px;">
-          <div class="title_tag" style="float:right; line-height: 1;">ABOUT</div>
+    <div class="row" style="margin-top: 4em; margin-bottom: 5em;">
+      <div class="col-lg-6 col-lg-offset-3">
+        <div style="padding-left: 12px;">
+          <div class="title_tag" style="line-height: 1;">ABOUT</div>
           <br>
-          <p style="text-align: right; margin-bottom: 0em;">We are a mission driven company that provides technology applications and services to local governments and community organizations. We focus on open source software and user-centred design. Our goal is to help the public sector operate and engage residents more effectively. </p>
+          <p style="padding-top: .75em;">We are a <span class="emphasize">mission driven company</span> that provides technology applications and services to local governments. We focus on <span class="emphasize">open source</span> software and <span class="emphasize">user-centered design</span>. Our goal is to help the public sector operate more efficiently while engaging residents more effectively. </p>
         </div>
       </div>
+      <!--
       <div class="col-lg-6">
         <img style="padding: 0px 15px;" class="img-responsive" src="{{ url_for('static', filename='images/postcode_group.jpg') }}" alt="POSTCODE TEAM">
       </div>
+    -->
     </div> 
   </div>
 </div>
-<div class="jumbotron">
-  <div class="container" style="margin-top: 3em;">
+<div class="jumbotron" style="background: url(static/images/products_image.jpg); border-top: 12px solid white;">
+  <div class="container" style="margin-top: 5em;">
     <div class="title_tag">PRODUCTS</div> 
-    <div class="row" style="margin-bottom: 3em;">
+    <div class="row" style="margin-bottom: 6em;">
       <div class="col-lg-4">
         <div class="products recordtrac">
             RecordTrac
         </div>
-        <p>{{"recordtrac" | get_product("blurb") }}</p>
-        <a href="/products/recordtrac">Learn More</a>
+        <div class="white_back"  style="padding-left: 45px;">
+          <p style="margin-bottom: 20px;">{{"recordtrac" | get_product("blurb") }}</p>
+          <strong><a href="/products/recordtrac">Product Sheet</a></strong>
+        </div>
       </div>
       <div class="col-lg-4">
         <div class="products promptly">
           Promptly
         </div>
-        <p>{{"promptly" | get_product("blurb") }}</p>
-        <a href="/products/promptly">Learn More</a>
+        <div class="white_back"  style="padding-left: 45px;">
+          <p style="margin-bottom: 20px;">{{"promptly" | get_product("blurb") }}</p>
+          <strong><a href="/products/promptly">Product Sheet</a></strong>
+        </div>
       </div>
       <div class="col-lg-4">
         <div class="products cityvoice">
           CityVoice
         </div>
-        <p>{{"cityvoice" | get_product("blurb") }}
-        </p>
-        <a href="/products/cityvoice">Learn More</a>
+        <div class="white_back"  style="padding-left: 45px;">
+          <p style="margin-bottom: 20px;">{{"cityvoice" | get_product("blurb") }}</p>
+          <strong><a href="/products/cityvoice">Product Sheet</a></strong>
+        </div>
       </div>
     </div> 
   </div>
 </div>
 <div id = "services" class="jumbotron" style="background: none;">
   <div class="container">
-    <div class="row " style="margin-bottom: 3em; margin-top: 3em;">
-      <div class="col-lg-6">
-        <div class="title_tag" style="float:right; line-height: 1;">SERVICES</div>
+    <div class="row " style="margin-top: 4em; margin-bottom: 5em;">
+      <div class="col-lg-6 col-lg-offset-3">
+        <div class="title_tag" style="line-height: 1;">SERVICES</div>
           <br>
-          <p style="text-align: right; margin-bottom: 0em;">In addition to the products we develop and support we also provide contract and consulting services for local governments. We offer full service research, design, development, implementation, and maintenance for technology solutions.</p>
+          <p style="text-align: left; padding-top: .75em;">In addition to the products we develop and support we also provide <span class="emphasize">contract and consulting for local governments</span>. We offer full service research, design, development, implementation, and maintenance for technology solutions.</p>
         </div>
       </div>
     </div> 
