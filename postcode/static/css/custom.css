@@ -65,8 +65,14 @@ p {
   padding: 0px;  
 }
 .jumbotron{
-  padding: 50px;
+  padding: 25px;
   background-repeat: no-repeat;
+}
+
+.shadow {
+  -moz-box-shadow:    0px 0px 20px 5px #545454;
+  -webkit-box-shadow: 0px 0px 20px 5px #545454;
+  box-shadow:         0px 0px 20px 5px #545454;
 }
 
 /* Header*/
@@ -94,6 +100,14 @@ a.banner:link {color: white;}
 a.banner:visited {color: white;}  
 a.banner:hover {color:#D9D9D9; text-decoration: none;}  
 a.banner:active {color: white;}  
+
+/* Top Banner */ 
+.banner_text{
+  background: white;
+  display:inline;
+  padding: 0px 10px;
+  margin-bottom: 25px;
+}
 
 /* Products */
 
@@ -154,10 +168,12 @@ color: white;
 display: inline; 
 font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
-padding: .25em .6em; 
+padding: .25em .6em;
+/* 
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
-border-radius: 3px; /* future proofing */
+border-radius: 3px; 
+*/
 }
 
 /* footer */
