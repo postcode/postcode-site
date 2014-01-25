@@ -82,18 +82,19 @@ h5 {
 p {
   font-family: 'Open Sans', sans-serif;
   color: #939597;
-  font-size: 1em;
-  text-align: left;
+  font-size: .9em;
   margin-bottom: 0em;
 }
 .emphasize{
   color:#636363; font-family: 'Montserrat', sans-serif;"
 }
+.emphasize_med{
+  color:#939597; font-family: 'Montserrat', sans-serif;"
+}
 .name{
   font-family: 'Montserrat', sans-serif;
   color: #636363;
   font-size: .9em;
-  text-align: left;
   margin-top: 5px;
   padding: 0px;
   line-height: 1em;
@@ -104,8 +105,15 @@ p {
   font-size: .7em;
   line-height: 1em;
   margin-top: 2px;
-  margin-bottom: 8px;
-  padding: 0px;  
+  margin-bottom: 4px;
+  padding-top: 0px;  
+}
+.contact{
+  color: #A1A1A1;
+  font-size: .7em;
+  line-height: 1em;
+  margin-top: 2px;
+  padding-top: 0px;  
 }
 .jumbotron{
   padding: 25px;
@@ -120,7 +128,8 @@ p {
 .white_back{
   background: white;
   text-align: left; 
-  padding: 0px 0px 20px 33px;
+  margin-top: .75em;
+  padding: 20px 20px 20px 33px;
 }
 
 /* Header*/
