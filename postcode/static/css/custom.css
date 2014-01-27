@@ -91,6 +91,9 @@ p {
 .emphasize_med{
   color:#939597; font-family: 'Montserrat', sans-serif;"
 }
+.shim{
+  margin-bottom: 1em;
+}
 .name{
   font-family: 'Montserrat', sans-serif;
   color: #636363;
@@ -235,6 +238,9 @@ display: inline;
 font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
 padding: .25em .6em;
+-moz-box-shadow:    0px 0px 25px -3px #FFFFFF;
+-webkit-box-shadow: 0px 0px 25px -3px #FFFFFF;
+box-shadow:         0px 0px 25px -3px #FFFFFF;
 }
 
 .title_tag_wht{
