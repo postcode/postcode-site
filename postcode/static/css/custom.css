@@ -88,7 +88,10 @@ p {
   color:#939597; font-family: 'Montserrat', sans-serif;"
 }
 .shim{
-  margin-bottom: 1em;
+  margin-bottom: .75em;
+}
+.shim_top{
+  margin-top: .75em;
 }
 .name{
   font-family: 'Montserrat', sans-serif;
@@ -117,6 +120,7 @@ p {
 .jumbotron{
   padding: 25px;
   background-repeat: no-repeat;
+  line-height: 1.5;
 }
 
 .shadow {
