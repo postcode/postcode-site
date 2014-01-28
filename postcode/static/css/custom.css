@@ -120,7 +120,6 @@ p {
 .jumbotron{
   padding: 25px;
   background-repeat: no-repeat;
-  line-height: 1.5;
 }
 
 .shadow {
@@ -250,6 +249,7 @@ color: #939597;
 display: inline; 
 font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
+margin-top: 10px;
 padding: .25em .6em;
 }
 /* 
