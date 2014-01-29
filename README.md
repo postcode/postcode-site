@@ -11,5 +11,5 @@ Install python and the requirements
 `pip install -r requirements.txt`
 
 
-Browse to the `postcode.github.io` directory
+Browse to the `postcode.github.io` directory and run
 `foreman start`
