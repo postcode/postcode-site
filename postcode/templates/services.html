@@ -2,9 +2,61 @@
 
 {% block content %}
 <!-- The breaks are here because of the sticky header.-->
-</br>
-</br>
-</br>
-</br>
-Here you can find out all about our services.
+<div class="jumbotron" style="background: url(static/images/services.jpg);">
+  <div class="container">
+    <div class="row " style="margin-top: 14em; margin-bottom: 2em;">
+      <div class="col-lg-10 col-lg-offset-2" style="padding-top: 1.5em;">
+      	<h1 class="banner_text">TECHNOLOGY</h1><br><h1 class="banner_text">CONSULTING FOR</h1><br><h1 class="banner_text">LOCAL GOVERNMENTS</h1>
+	  </div>
+	  <div class="col-lg-8 col-lg-offset-2">
+	  	<div class="title_tag_wht"><div style="display: inline;"> <a href="#our_services" class="banner">LEARN MORE</a> &nbsp;</div> <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/down_arrow.png') }}" alt="v"></div>
+	  </div>
+    </div> 
+  </div>
+</div>
+<div id ="our_services" class="jumbotron" style="background: none;">
+  <div class="container">
+    <div class="row " style="margin-top: 3em; margin-bottom: 4em;">
+      <div class="col-lg-4">
+        <div class="title_tag">RESEARCH + ANALYSIS</div>
+        <br>
+        <div class="shim_top">
+        	<div class="emphasize">Business Process Analysis</div>
+        	<p class="shim">Review context and logistics of current processes within civic institutions focusing on bottlenecks and inefficient uses of technology.</p>
+			<div class="emphasize">Data & Spatial Analysis</div>
+			<p class="shim">Use our expertise in data and spatial analysis to help understand existing patterns, problems, and potential solutions in your community.</p>
+			<div class="emphasize">User Research</div>
+			<p class="shim">Study how residents and public servants currently use technology to help remove barriers.</p>
+		</div>
+      </div>
+      <div class="col-lg-4">
+        <div class="title_tag">DESIGN + DEVELOPMENT</div>
+        <br>
+        <div class="shim_top">
+        	<div class="emphasize">Service Design</div>
+        	<p class="shim">We work collaboratively with organizations to help craft effective processes and policies around technology.</p>
+			<div class="emphasize">Data Management</div>
+			<p class="shim">Cleaning and managing is important for innovation, but it can be a hassle. We help make this process easy.</p>
+			<div class="emphasize">Web Design</div>
+			<p class="shim">We create interfaces with technology that are simple, beautiful and easy to use.</p>
+			<div class="emphasize">Web Development</div>
+			<p class="shim">We have extensive experience in modern web development languages, frameworks, and practices.</p>
+		</div>
+      </div> 
+      <div class="col-lg-4">
+        <div class="title_tag">IMPLEMENTATION + MAINTENANCE</div>
+        <br>
+        <div class="shim_top">
+        	<div class="emphasize">Marketing & Outreach</div>
+        	<p class="shim">Many times new applications require outreach in order to gain visibility and adoption. We can design marketing collateral and run promotional events to ensure projects are succesful.</p>
+			<div class="emphasize">Training</div>
+			<p class="shim">Learning new things is always easier with a good teacher. We can provide trainging packages for any of our products or consulting solutions.</p>
+			<div class="emphasize">Deployment & Hosting</div>
+			<p class="shim">We like the ease of hosting applications on the cloud. We can also help deploy applications on internal servers if required. Our maintenance packages that ensure your application stays effective.</p>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
 {% endblock content %}
+

@@ -2,66 +2,119 @@
 
 {% block content %}
 <!-- The breaks are here because of the sticky header.-->
-<div class="jumbotron" style="background:none;">
+<div class="jumbotron" style="background: url(static/images/solutions.jpg);">
   <div class="container">
-    <div class="row " style="padding-top: 3em; padding-bottom: 0em;">
-      <div class="col-lg-6">
-        <div style="float:right; line-height: 1.0;">
-          <div class="title_tag">BACKGROUND</div>
-        </div>
+    <div class="row " style="margin-top: 8em; margin-bottom: 5em;">
+      <div class="col-lg-8 col-lg-offset-1" style="padding-top: 1.5em; text-align: right;">
+      	<h1 class="banner_text" style="margin-top: 5em;">WE HELP THE</h1><br><h1 class="banner_text">PUBLIC SECTOR</h1><br><h1 class="banner_text">SOLVE PROBLEMS</h1>
+	  </div>
+	  <div class="col-lg-8 col-lg-offset-1" style="text-align: right;">
+	  	<div class="title_tag_wht"><div style="display: inline;"> <a href="#philosophy" class="banner">LEARN HOW</a> &nbsp;</div> <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/down_arrow.png') }}" alt="V"></div>
+	  </div>
+    </div> 
+  </div>
+</div>
+<div id ="philosophy" class="jumbotron" style="background: none;">
+  <div class="container">
+    <div class="row " style="margin-top: 4em; margin-bottom: 4em;">
+      <div class="col-lg-6 col-lg-offset-3">
+        <div class="title_tag">PHILOSOPHY</div>
         <br>
-        <p style="text-align: right;">We are passionate about making local governments more effective and inclusive. We bring this passion to every project we work on along with a combined 30 years of consulting experience in the technology and government sectors.</p>
-      </div>
-      <div class="col-lg-6">
-        <div style="background:#939597; width:450px; height: 300px;"></div>
+        <p style="padding-top: .75em;">We use <span class="emphasize">lean methodologies</span> to develop our products and guide our consulting engagements. This means we work <span class="emphasize">quickly</span> and <span class="emphasize">iteratively</span>, testing ideas to find <span class="emphasize">great solutions</span> that provide value to our customers. We also believe the best way to understand a problem is to talk with and observe people. Everyday we see the <span class="emphasize">positive impact</span> these processes can have on the lives of residents and public servants.</p>
       </div>
     </div> 
   </div>
 </div>
-<div class="jumbotron" style="background:white; padding-top: 2em; padding-bottom: 3em;">
+<div class="jumbotron" style="background: url(static/images/cfa_office.jpg);">
+  <div class="container">
+    <div class="row " style="margin-top: 4em; margin-bottom: 4em;">
+      <div class="col-lg-6 col-lg-offset-3">
+        <div class="title_tag">EXPERIENCE</div>
+        <br>
+        <p class="white_back shim_top">Our team is made up of <span class="emphasize">technologists, researchers,</span> and <span class="emphasize">designers</span> who are passionate about democratic governance, civic engagement, and the power of technology. We bring this passion to every project we work on along with a combined <span class="emphasize">30 years of consulting experience</span> in the technology and government sectors.</p>
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="jumbotron" style="background: none; padding-top: 4em; padding-bottom: 3em;">
   <div class="container" >
-    <div style="margin-bottom: 40px;">
-      <div class="title_tag">OUR TEAM</div> 
-    </div>
+  	<div class="row">
+      <div class="col-lg-2 col-lg-offset-2">
+	    <div style="margin-bottom: 40px; text-align: right;">
+	      <div class="title_tag">OUR TEAM</div> 
+	    </div>
+	  </div>
+	</div>
     <div class="row">
-      <div class="col-lg-4">
-        <img src="{{ url_for('static', filename='images/Andy_Hull-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
+      <div class="col-lg-3 col-lg-offset-1" style="text-align: right;">
+        <img src="{{ url_for('static', filename='images/Andy_Hull-150x150.jpg') }}" style="margin-bottom: 10px;">
         <div class="name">ANDY HULL</div>
-        <div class="position">Director, Co-founder</div>
-        <p style="font-size: .7em; background: white; text-align: justify;"><!--Andy is a web developer and a Geographic Information Systems analyst with ten years of experience working with government agencies, academic research groups, libraries, non-profits, and think tanks to create user centered web applications. He holds a BA in Geography and an MS in Information Science, both from the University of North Carolina.--><a href="mailto:andy@postcode.io" target="_blank">andy@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/andyhull3" target="_blank">@andyhull3</a></p>
+        <div class="position" style="padding-bottom: 5px;">Director, Founder</div>
+        <div class="contact"><a href="mailto:andy@postcode.io" target="_blank">andy@postcode.io</a></div>
+        <div class="contact shim"><a href="https://twitter.com/andyhull3" target="_blank">@andyhull3</a></div>
       </div>
-      <div class="col-lg-4">
-        <img src="{{ url_for('static', filename='images/CJ_Bryan-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
-        <div class="name">CJ Bryan</div> 
-        <div class="position">Engineering, Co-founder</div>
-         <p style="font-size: .7em; background: white; text-align: justify;"><!--CJ is a web developer and software consultant. Most recently, he rebuilt the online publishing platform for the Society for Cultural Anthropology. Previously he worked with Fight for the Future creating online campaign platforms. He spends the rest of his time riding bikes and hacking on small machines.--> <a href="mailto:cj@postcode.io" target="_blank">cj@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/waltz" target="_blank">@waltz</a></p>
-
-      </div>
-      <div class="col-lg-4">
-        <img src="{{ url_for('static', filename='images/Cris_Cristina1-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
-        <div class="name">CRIS CRISTINA</div> 
-               <div class="position">Design, Co-founder</div>
-         <p style="font-size: .7em; background: white; text-align: justify;"><!--Cris is a user experience designer originally from New Orleans. Most recently, he held the position of design manager at Cisco, developing next generation collaboration products for mobile and web platforms. He has worked as a design strategist, user researcher, and interaction designer. With a background in biomedical engineering and human factors, he spent six years designing aeronautical interfaces for the U.S. Navy.--> <a href="mailto:cris@postcode.io" target="_blank">cris@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/criscristina" target="_blank">@criscristina</a></p> 
+      <div class="col-lg-5">
+      	<p><span class="emphasize_med">Andy oversees operations and strategy for PostCode.</span> In 2013, Andy was part of the San Francisco Code for America fellowship team. He was the lead developer on Promptly, a text messaging application created for the SF Human Services Agency. The success of the San Francisco fellowship team and Promptly inspired Andy to co-found PostCode.<br><br>Before coming to PostCode, Andy worked as web developer and a Geographic Information Systems analyst. Over the past ten years Andy has worked with government agencies, academic research groups, libraries, non-profits, and think tanks to create user centered web applications. He holds a BA in Geography and an MS in Information Science, both from the University of North Carolina. </p>
       </div>
     </div>
-    <div class="row" style="margin-top: 50px;">
-      <div class="col-lg-4">
-        <img src="{{ url_for('static', filename='images/Richa_Agarwal_Headshot-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
-        <div class="name">RICHA AGARWAL</div> 
-        <div class="position">Engineering, Co-founder</div>
-          <p style="font-size: .7em; background: white; text-align: justify;"><!-- Richa is a software developer and lover of technology, civic engagement, and the outdoors. Most recently, she has been working to help re-elect Obama from the campaign headquarters. When she’s not coding, you can find her at a local coffee shop or out on the trails. Richa holds a BA in Philosophy and Psychology from Colgate University, and an MS in Computer Science from the University of Illinois at Chicago.--> <a href="mailto:richa@postcode.io" target="_blank">richa@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/richaaaa" target="_blank">@richaaaa</a></p>
+    <div class="row" style="margin-top: 2.75em;">
+      <div class="col-lg-3 col-lg-offset-1" style="text-align: right;">
+        <img src="{{ url_for('static', filename='images/CJ_Bryan-150x150.jpg') }}" style="margin-bottom: 10px;">
+        <div class="name">CJ BRYAN</div>
+        <div class="position" style="padding-bottom: 5px;">Engineer, Founder</div>
+        <div class="contact"><a href="mailto:cj@postcode.io" target="_blank">cj@postcode.io</a></div>
+        <div class="contact shim"><a href="https://twitter.com/waltz" target="_blank">@waltz</a></div>
       </div>
-      <div class="col-lg-4">
-        <img src="{{ url_for('static', filename='images/Reed_Duecy_Gibbs-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
-        <div class="name">REED DUECY-GIBBS</div>              
-        <div class="position">Design, Co-founder</div>
-         <p style="font-size: .7em; background: white; text-align: justify;"><!--Reed is an urbanist and interdisciplinary designer and is the co-founder of OpenUrban, a crowd sourced map and forum on current urban development. He has worked as an architect and urban designer, and as a policy researcher for the City of Seattle. Most recently his work was on display in the Istanbul Design Biennial’s Ad-Hocracy exhibition. Reed is a former Fulbright Scholar and holds a Masters of Architecture from the Rhode Island School of Design.--> <a href="mailto:reed@postcode.io" target="_blank">reed@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/rduecyg" target="_blank">@rduecyg</a></p>
+      <div class="col-lg-5">
+      	<p><span class="emphasize_med">CJ is a software developer and technology strategist for PostCode.</span> He brings many years of experience working on the web with Ruby and JavaScript. As a Code for America fellow in 2013 he helped the city of New York use data to allocate social services more effectively.<br><br> Previously he helped groups like Fight for the Future and the Society for Cultural Anthropology build media platforms on the web. He holds a BS in Computer Science from Worcester Polytechnic Institute. When he’s not building software you can find him in the shop building bicycles or riding them in the Oakland hills. </p>
       </div>
-      <div class="col-lg-4">
-        <img src="{{ url_for('static', filename='images/Tamara_Manik-Perlman-150x150.jpg') }}" style="margin-bottom: 10px; margin-right: 20px; text-align:right;">
-        <div class="name">TAMARA MANIK-PERLMAN</div> 
-        <div class="position">Engineering, Co-founder</div>
-       <p style="font-size: .7em; background: white; text-align: justify;"><!-- Tamara is passionate about geodata visualization, interactive art, local food, national parks, and inclusive urban citizenship. Most recently, she worked at Azavea where she managed the development of web and mobile applications, and lead the spatial analysis and UX design teams. Tamara has worked at environmental and health non-profits and is particularly interested in the role of immigrants in shaping urban development. She studied Anthropology at Swarthmore College and did graduate work in Geography at Temple University. --> <a href="mailto:tamara@postcode.io" target="_blank">tamara@postcode.io</a>&nbsp;|&nbsp;<a href="https://twitter.com/TamaraMP" target="_blank">@TamaraMP</a></p>
+    </div>
+    <div class="row" style="margin-top: 2.75em;">
+      <div class="col-lg-3 col-lg-offset-1" style="text-align: right;">
+        <img src="{{ url_for('static', filename='images/Cris_Cristina1-150x150.jpg') }}" style="margin-bottom: 10px;">
+        <div class="name">CRIS CRISTINA</div>
+        <div class="position" style="padding-bottom: 5px;">Designer, Founder</div>
+        <div class="contact"><a href="mailto:cris@postcode.io" target="_blank">cris@postcode.io</a></div>
+        <div class="contact shim"><a href="https://twitter.com/criscristina" target="_blank">@criscristina</a></div>
+      </div>
+      <div class="col-lg-5">
+      	<p><span class="emphasize_med">Cris does product, design and user research for PostCode.</span> He is passionate about driving innovation through design.  As a 2013 Code for America Fellow, he helped create RecordTrac, a public records request management tool. Previously, he held the position of design manager at Cisco, developing next generation collaboration products for mobile and web platforms. He has worked as a design strategist, user researcher, and interaction designer. With a background in biomedical engineering and human factors, he spent six years designing simple interfaces to complex systems in the federal government.</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 2.75em;">
+      <div class="col-lg-3 col-lg-offset-1" style="text-align: right;">
+        <img src="{{ url_for('static', filename='images/Richa_Agarwal_Headshot-150x150.jpg') }}" style="margin-bottom: 10px;">
+        <div class="name">RICHA AGARWAL</div>
+        <div class="position" style="padding-bottom: 5px;">Engineer, Founder</div>
+        <div class="contact"><a href="mailto:richa@postcode.io" target="_blank">richa@postcode.io</a></div>
+        <div class="contact shim"><a href="https://twitter.com/richaaaa" target="_blank">@richaaaa</a></div>
+      </div>
+      <div class="col-lg-5">
+      	<p><span class="emphasize_med">Richa is a software developer, helping run the technical arm of PostCode.</span> Meaningful and lasting impact drives the work that she does. As a 2013 Code for America fellow, she helped build RecordTrac, in response to the City of Oakland’s growing need for a tool to help manage and respond to public records requests. Prior to Code for America, she worked on the Data team for the Obama re-election campaign. When she’s not coding, you can find her hiking or climbing things.<br><br>Richa holds a BA in Philosophy and Psychology from Colgate University, and an MS in Computer Science from the University of Illinois at Chicago.</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 2.75em;">
+      <div class="col-lg-3 col-lg-offset-1" style="text-align: right;">
+        <img src="{{ url_for('static', filename='images/Reed_Duecy_Gibbs-150x150.jpg') }}" style="margin-bottom: 10px;">
+        <div class="name">REED DUECY-GIBBS</div>
+        <div class="position" style="padding-bottom: 5px;">Designer, Founder</div>
+        <div class="contact"><a href="mailto:reed@postcode.io" target="_blank">reed@postcode.io</a></div>
+        <div class="contact shim"><a href="https://twitter.com/rduecyg" target="_blank">@rduecyg</a></div>
+      </div>
+      <div class="col-lg-5">
+      	<p><span class="emphasize_med">Reed is a designer, urbanist, and the creative lead for PostCode.</span> He focuses on making applications for cities and governments that are simple, beautiful, and easy to use. Prior to PostCode, Reed was a fellow with Code for America, where he worked to help develop CityVoice a call in system for collecting community feedback. Before that he was in Istanbul on a Fulbright Grant studying architecture and infrastructure planning. His work and thinking on cities and design have been presented in numerous biennials, conferences, and publications in the U.S. and abroad. In his free time he likes running, making things with his hands, and a good IPA. <br><br>Reed holds a Masters of Architecture from the Rhode Island School of Design and a BA in Urban and Environmental Studies from Colorado College. </p>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 2.75em;">
+      <div class="col-lg-3 col-lg-offset-1" style="text-align: right;">
+        <img src="{{ url_for('static', filename='images/Tamara_Manik-Perlman-150x150.jpg') }}" style="margin-bottom: 10px;">
+        <div class="name">TAMARA<br>MANIK-PERLMAN</div>
+        <div class="position" style="padding-bottom: 5px;">Research, Founder</div>
+        <div class="contact"><a href="mailto:tamara@postcode.io" target="_blank">tamara@postcode.io</a></div>
+        <div class="contact shim"><a href="https://twitter.com/TamaraMP" target="_blank">@TamaraMP</a></div>
+      </div>
+      <div class="col-lg-5">
+      	<p><span class="emphasize_med">Tamara does user research, product strategy and software development at PostCode.</span> She’s committed to building cities, governments and technologies that are both equitable and beautiful. As a 2013 Code for America fellow she helped build CityVoice, a tool for integrating community feedback into city decision-making processes. Previously, she worked at Azavea where she lead the spatial analysis and UX design teams and managed the development of web and mobile applications for clients ranging from local non-profits to federal agencies.<br><br>She studied Anthropology at Swarthmore College and did graduate work in Geography at Temple University.  Outside the office she splits her time between backpacking in national parks and tinkering with sensors.</p>
       </div>
     </div>
   </div>
