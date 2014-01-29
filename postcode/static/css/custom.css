@@ -178,21 +178,38 @@ a.banner:active {color: white;}
 }
 
 /* Products */
-
-.recordtrac{
-  font-family: 'Lato', sans-serif;
-  color: #636363;
-  border-left: 20px solid #00889E;
+.productbox {
 
 }
-.promptly{
-  font-family: 'Open Sans', sans-serif;
+.productbox .title {
+  font-family: sans-serif;
   color: #636363;
+}
+
+.productbox .tab {
+  border-left: 20px solid #00889E;
+}
+
+.recordtrac .title{
+  font-family: 'Lato', sans-serif;
+
+  
+}
+.recordtrac .tab {
+    border-left: 20px solid #00889E;
+}
+
+.promptly .title{
+  font-family: 'Open Sans', sans-serif;
+}
+.promptly .tab{
   border-left: 20px solid #FAAC3A;
 }
-.cityvoice{
+
+.cityvoice .title{
   font-family: 'Varela Round', sans-serif;
-  color: #636363;
+}
+.cityvoice .tab{
   border-left: 20px solid #6CC5AD;
 }
 .products{
