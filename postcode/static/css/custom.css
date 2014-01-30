@@ -54,24 +54,24 @@ $DarkGray: #636363;
 
 h2 {
   color: #939597;
-  font-size: 1.15em;
+  font-size: 1.35em;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   letter-spacing: 0;
-  text-align: left;
+  margin-bottom: .25em;
+  margin-top: 10px;
 }
 h3{
   font-family: 'Montserrat', sans-serif;
-  color: #636363;
-  font-size: .9em;
-  text-align: left;
-  margin-top: 10px;
+  color: #939597;
+  font-size: 1.1em;
+  margin-bottom: .5em;
+  margin-top: 0em; 
   padding: 0px;
-  line-height: 0em;
 }
 h5 {
   color: #636363;
   font-size: .85em;
-  text-align: left;
   margin-bottom: 0em;
 }
 
@@ -79,8 +79,15 @@ p {
   font-family: 'Open Sans', sans-serif;
   color: #939597;
   font-size: .9em;
-  margin-bottom: 0em;
+  padding-bottom: .5em;
 }
+p .sml_quote{
+  font-family: 'Open Sans', sans-serif;
+  color: #939597;
+  font-size: .8em;
+  padding-bottom: .5em;
+}
+
 .emphasize{
   color:#636363; font-family: 'Montserrat', sans-serif;"
 }
@@ -92,6 +99,15 @@ p {
 }
 .shim_top{
   margin-top: .75em;
+}
+.shim_l{
+  margin-left: .75em;
+}
+.shim_r{
+  margin-right: .75em;
+}
+.white{
+  color: white;
 }
 .name{
   font-family: 'Montserrat', sans-serif;
@@ -118,8 +134,9 @@ p {
   padding-top: 0px;  
 }
 .jumbotron{
-  padding: 25px;
   background-repeat: no-repeat;
+  margin-bottom: 0em;
+  padding: 25px 25px 0px 25px;
 }
 
 .shadow {
@@ -129,7 +146,6 @@ p {
 }
 .white_back{
   background: white;
-  text-align: left; 
   padding: 20px 20px 20px 33px;
 }
 
@@ -167,7 +183,17 @@ a:active {color: white;}
 a.banner:link {color: #636363;}     
 a.banner:visited {color: #636363;}  
 a.banner:hover {color:#939597; text-decoration: none;}  
-a.banner:active {color: white;}  
+a.banner:active {color: white;} 
+
+a.citation {
+  color: white; 
+  font-size: .45em; 
+  line-height: 1;
+}  
+a.citation:link {color: white;}     
+a.citation:visited {color: white;}  
+a.citation:hover {color:white; text-decoration: none;}  
+a.citation:active {color: white;}  
 
 /* Top Banner */ 
 .banner_text{
@@ -192,11 +218,15 @@ a.banner:active {color: white;}
 
 .recordtrac .title{
   font-family: 'Lato', sans-serif;
-
-  
 }
 .recordtrac .tab {
     border-left: 20px solid #00889E;
+}
+.recordtrac .color {
+    color: #00889E;
+}
+.recordtrac .color_back {
+    background: #00889E;
 }
 
 .promptly .title{
@@ -222,6 +252,10 @@ a.banner:active {color: white;}
 }
 
 /* Buttons & Tags */
+.glyphicon{
+    color: #636363;
+}
+
 .btn-inverse{
   background: white;
   border: 2px solid white;
