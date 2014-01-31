@@ -3,3 +3,9 @@
 #~#
 _site
 *.pyc
+.env*
+
+# @waltz's emacs gitignore partee pak
+*~
+.#*
+#~#

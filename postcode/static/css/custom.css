@@ -203,7 +203,16 @@ a.citation_grey {
 a.citation_grey:link {color: #939597;}     
 a.citation_grey:visited {color: #939597;}  
 a.citation_grey:hover {color:#939597; text-decoration: none;}  
-a.citation_grey:active {color: #939597;}   
+a.citation_grey:active {color: #939597;} 
+
+a.rt_link {
+  color: #00889E; 
+}  
+a.rt_link:link {color: #00889E;}     
+a.rt_link:visited {color: #00889E;}  
+a.rt_link:hover {color:#939597; text-decoration: none;}  
+a.rt_link:active {color: #00889E;}  
+
 
 /* Top Banner */ 
 .banner_text{

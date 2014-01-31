@@ -7,10 +7,9 @@ This is just a placeholder
 
 # Building
 
-Install ruby and the gems.
-`bundle`
+Install python and the requirements
+`pip install -r requirements.txt`
 
-Build the site.
-`bundle exec jekyll build`
 
-Browse to the `_site` directory and voila! Your built version of the site!
+Browse to the `postcode.github.io` directory and run
+`foreman start`
