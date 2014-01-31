@@ -140,9 +140,9 @@ p .sml_quote{
 }
 
 .shadow {
-  -moz-box-shadow:    0px 0px 20px 5px #636363;
-  -webkit-box-shadow: 0px 0px 20px 5px #636363;
-  box-shadow:         0px 0px 20px 5px #636363;
+  -moz-box-shadow:    0px 0px 20px 5px #939597;
+  -webkit-box-shadow: 0px 0px 20px 5px #939597;
+  box-shadow:         0px 0px 20px 5px #939597;
 }
 .white_back{
   background: white;
@@ -193,7 +193,17 @@ a.citation {
 a.citation:link {color: white;}     
 a.citation:visited {color: white;}  
 a.citation:hover {color:white; text-decoration: none;}  
-a.citation:active {color: white;}  
+a.citation:active {color: white;}
+
+a.citation_grey {
+  color: #939597; 
+  font-size: .45em; 
+  line-height: 1;
+}  
+a.citation_grey:link {color: #939597;}     
+a.citation_grey:visited {color: #939597;}  
+a.citation_grey:hover {color:#939597; text-decoration: none;}  
+a.citation_grey:active {color: #939597;}   
 
 /* Top Banner */ 
 .banner_text{
