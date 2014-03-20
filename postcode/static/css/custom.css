@@ -7,7 +7,7 @@
 
 $CityVoiceColor: #6CC5AD;
 $PromptlyColor: #FAAC3A;
-$RecordTracColor: #00889E;
+$RecordTracColor: #E57755;
 $PostCodeColor: #86C9D9;
 $LightGray: #F4F4F4;
 $MedGray: #939597;
@@ -206,12 +206,12 @@ a.citation_grey:hover {color:#939597; text-decoration: none;}
 a.citation_grey:active {color: #939597;} 
 
 a.rt_link {
-  color: #00889E; 
+  color: #E57755; 
 }  
-a.rt_link:link {color: #00889E;}     
-a.rt_link:visited {color: #00889E;}  
+a.rt_link:link {color: #E57755;}     
+a.rt_link:visited {color: #E57755;}  
 a.rt_link:hover {color:#939597; text-decoration: none;}  
-a.rt_link:active {color: #00889E;}  
+a.rt_link:active {color: #E57755;}  
 
 
 /* Top Banner */ 
@@ -242,11 +242,21 @@ a.rt_link:active {color: #00889E;}
     border-left: 20px solid #00889E;
 }
 .recordtrac .color {
-    color: #00889E;
+    color: #E57755;
 }
 .recordtrac .color_back {
-    background: #00889E;
+    background: #E57755;
 }
+.recordtrac h1 {
+    color: #939597;
+}
+.recordtrac h2 {
+    margin-bottom: 1.25em;
+}
+.recordtrac p {
+    margin-bottom: 1.25em;
+}
+
 
 .promptly .title{
   font-family: 'Open Sans', sans-serif;
@@ -271,9 +281,25 @@ a.rt_link:active {color: #00889E;}
 }
 
 /* Buttons & Tags */
-.glyphicon{
+
+.glyphicon-save{
     color: #636363;
 }
+.glyphicon-ok {
+  color: #939597;
+  margin-right: .75em;
+}
+.btn-danger{
+  background: #E57755;
+  border: #E57755;
+  font-size: 1em;
+  padding: .4em 1.3em;
+}
+
+.btn-danger:hover  {
+  background: #E29681;
+  border: none;
+} 
 
 .btn-inverse{
   background: white;
