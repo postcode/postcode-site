@@ -4,27 +4,38 @@
 <div class="recordtrac">
 <div class="jumbotron" style="background: url(static/images/papers.jpg);">
   <div class="container">
-    <div class="row" style="margin-top: 8em; margin-bottom: 3em; text-align: right;">
-      <div class="col-lg-9 col-lg-offset-2">
-      	<h1 class="banner_text title color">Public <br>&nbsp;records requests <br>&nbsp;made easy</h1><br>
-	  	<div class="title_tag_wht">
-	    	<a href="/products/recordtrac" target="_blank" class="banner">PRODUCT SHEET (PDF)</a>&nbsp;&nbsp;<span class="glyphicon glyphicon-save"></span>
+    <div class="row" style="margin-top: 6em; margin-bottom: 3em;">
+      <div class="col-lg-8 col-lg-offset-2 white_back" style="padding: 1.75em;">
+        
+        <div class="row">
+          <div class="col-lg-2">
+            <img class="img-responsive" src="{{ url_for('static', filename='images/recordtrac_logo_notext.png') }}" alt="recordtrac logo">
+          </div>
+          <div class="col-lg-10">
+            <h1>RecordTrac</h1>
+            <h2 class="title color">Public records requests made easy</h2>
+             <p>
+                <span class="glyphicon glyphicon-ok"></span>Process requests compliantly, transparently, and efficiently 
+              <br>
+                <span class="glyphicon glyphicon-ok"></span>Allow the public to track all requests online 
+              <br>
+                <span class="glyphicon glyphicon-ok"></span>Manage responses within and across departments
+              <br>
+                <span class="glyphicon glyphicon-ok"></span>Save valuable staff time. 
+            </p>
+            <button type="button" class="btn btn-danger" onclick="window.open('https://docs.google.com/forms/d/1ehwtX0W1sbnCYOG4ysS4PnBvVD0AFpT4gpx7jQ2ptBI/viewform', '_blank')">REQUEST DEMO</button>
+      	  	<div class="title_tag_wht">
+      	    	<a href="/products/recordtrac" target="_blank" class="banner">PRODUCT SHEET (PDF)</a>&nbsp;&nbsp;<span class="glyphicon glyphicon-save"></span>
+      	    </div>
+          </div>
+        </div>
+
 	    </div>
-	  </div>
     </div> 
   </div>
   <div style="text-align: right;">
   	<a class="citation" href="http://www.flickr.com/photos/21115027@N03/5837980802/in/photolist-9TTbiq-ai7YDS-aZjTXv-eaQywa-8T45NM-cVHs2u-8BZaCT-7QZKBi-aa3KE2-7xDRCd-dHuDb3-aYMTF6-edMCMq-9pi6Zr-doanLv-c64115-bQwK2i-9HLoyf-fNgfUh-bX1bqr-bX1bbR-cenwWC-9Yiwuf-8q2f2c-8vin5T-dciy51-aYMU9Z-8u9PjP-7KyTCu-87FbsA-9rtyjJ-8BxAVC-isdnGh-8XVfic-cfKJSC-8U2usA-8vmqty-8vmqw7-7z6QM3-7QMoJS-85yaN8-7VVajE-dWahqB-9dj7ix-cmRojW-88TG4B-hysXMo-hyso7j-hysdb6-hysdcZ-hysXGd">source:flickr.com, phrawr;</a> <a class="citation" href="http://creativecommons.org/licenses/by/2.0/">CC by 2.0</a>
   </div>
-</div>
-<div class="jumbotron color_back" style="padding: 0em;">
-	<div class="container">
-		<div class="row " style="margin-top: 0em; margin-bottom: 0em;">
-		  <div class="col-lg-8 col-lg-offset-1">
-		  	<h2 class="title shim_l white">RecordTrac</h2>
-		  </div>
-		</div> 
-	</div>
 </div>
 <div id ="features" class="jumbotron" style="background: none;">
   <div class="container">
@@ -128,7 +139,7 @@
   	<a class="citation" href="http://www.flickr.com/photos/32802092@N00/3472913945/in/photolist-6hTAjD-6hXHjb-6hXJjo-6jHAH1-6tiUQt-6tiVKv-6to42w-6to5yW-6wy9t3-6MK4dd-79GBQd-7cTDfS-7obAJG-7rLt4f-7ww6v8-8h1VDy-8gXFoc-8h1WHm-8gXEW8-8gXEzn-8gXEEZ-8gXFc6-8h1W4b-8gXF1X-8h1VJW-8gXERe-8h1WNU-8gXFik-8gXF7c-aGBmiX-eTgkCv-eTgkXk-eTgnfz-eTgmXt-eTgmCt-eTgk2x-eTsLwh-eTsKeC-eTsHB1-aGAcdP-hMk4Vd-dZ74pK-aHx9xV-ekopUz-7WDb14-dDZQ4v-a5JMad-a5FV2X-a5JMHU-a5JM69-a5FV9g">source:flickr.com, eoringle;</a> <a class="citation" href="http://creativecommons.org/licenses/by/2.0/">CC by 2.0</a>
   </div>
 </div>
-<div id="in_the_news" class="jumbotron" style="background: none;">
+<div id="in_the_news" class="jumbotron" style="background: #F4F4F4;">
   <div class="container">
   	<div class="row" style="margin-top: 1em; margin-bottom: 3em;">
 		<div class="col-lg-12" style="text-align: center;">
@@ -159,6 +170,17 @@
         	<p>"[RecordTrac] addresses citizens’ expectations of a government that responds quickly to their needs."</p>
         	<a href="http://oaklandnorth.net/2013/10/02/oakland-code-for-america-unveil-public-records-program/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/oaklandnorth_logo.png') }}" alt="Oakland North logo"></a>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="jumbotron" style="background: none;">
+  <div class="container">
+    <div class="row" style="margin-top: 4em; margin-bottom: 5em; text-align: center;">      
+      <div class="col-lg-12">
+          <h1 class="title color">I want RecordTrac in my city.</h1>
+          <br>
+          <button type="button" class="btn btn-danger" onclick="window.open('https://docs.google.com/forms/d/1ehwtX0W1sbnCYOG4ysS4PnBvVD0AFpT4gpx7jQ2ptBI/viewform', '_blank')">GET RECORDTRAC</button>
       </div>
     </div>
   </div>
