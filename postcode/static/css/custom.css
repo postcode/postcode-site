@@ -146,7 +146,7 @@ p .sml_quote{
 }
 .white_back{
   background: white;
-  padding: 20px 20px 20px 33px;
+  padding: 20px 20px 20px 25px;
 }
 
 /* Header*/
@@ -223,6 +223,16 @@ a.rt_link:active {color: #E57755;}
 }
 
 /* Products */
+
+.products{
+  padding-bottom: 2em;
+}
+.products h1 {
+    color: #939597;
+}
+
+
+
 .productbox {
 
 }
@@ -235,6 +245,9 @@ a.rt_link:active {color: #E57755;}
   border-left: 20px solid #00889E;
 }
 
+.recordtrac {
+  margin: 0em 1em 1em 0em;
+}
 .recordtrac .title{
   font-family: 'Lato', sans-serif;
 }
@@ -254,31 +267,39 @@ a.rt_link:active {color: #E57755;}
     margin-bottom: 1.25em;
 }
 .recordtrac p {
-    margin-bottom: 1.25em;
+  margin: 0em 2em .75em 0em;
 }
 
 
-.promptly .title{
-  font-family: 'Open Sans', sans-serif;
+
+.promptly {
+  margin: 0em 1em 1em 0em; 
 }
-.promptly .tab{
-  border-left: 20px solid #FAAC3A;
+.promptly .color{
+  color: #5c7dbe;
+}
+.promptly h1 {
+  font-size: 1.25em;
+}
+.promptly h2 {
+  font-size: .9em;
 }
 
-.cityvoice .title{
-  font-family: 'Varela Round', sans-serif;
+.cityvoice {
+  margin: 0em 1em 1em 0em; 
 }
-.cityvoice .tab{
-  border-left: 20px solid #6CC5AD;
+.cityvoice .color{
+  color: #6cc5ad;
 }
-.products{
-  background: white;
-  margin-top: 1em; 
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.0;
-  padding: 10px 25px;
+.cityvoice h1 {
+  font-size: 1.25em;
 }
+.cityvoice h2 {
+  font-size: .9em;
+}
+
+
+
 
 /* Buttons & Tags */
 
@@ -289,11 +310,35 @@ a.rt_link:active {color: #E57755;}
   color: #939597;
   margin-right: .75em;
 }
+
+.btn-primary{
+  background: #5c7dbe;
+  border: #5c7dbe;
+  font-size: .75em;
+  padding: .4em 1.3em;
+  margin-top: .75em;
+}
+.btn-primary:hover  {
+  background: #7891ba;
+  border: none;
+} 
+.btn-success{
+  background: #6cc5ad;
+  border: #6cc5ad;
+  font-size: .75em;
+  padding: .4em 1.3em;
+  margin-top: .75em;
+}
+.btn-success:hover  {
+  background: #83c4b2;
+  border: none;
+}
 .btn-danger{
   background: #E57755;
   border: #E57755;
   font-size: 1em;
   padding: .4em 1.3em;
+  margin-top: .75em;
 }
 
 .btn-danger:hover  {
