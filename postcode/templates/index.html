@@ -38,37 +38,78 @@
   </div>
 </div>
 <div class="jumbotron" style="background: url(static/images/products_image.jpg); border-top: 12px solid white;">
-  <div class="container" style="margin-top: 5em;">
-    <div class="title_tag">PRODUCTS</div> 
-    <div class="row" style="margin-bottom: 6em;">
-      <div class="col-lg-4 recordtrac productbox">
-        <div class="products tab title">
-            RecordTrac
+  <div class="container products">
+
+    <div class="row" style="margin-top: 1em; margin-bottom: 1.5em;">
+      <div class="col-lg-12" style="text-align: center;">
+        <div class="title_tag">PRODUCTS</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-7 col-lg-offset-1 white_back recordtrac">
+
+        <div class="row">
+
+          <div class="col-lg-2">
+            <img class="img-responsive" src="{{ url_for('static', filename='images/recordtrac_logo_notext.png') }}" alt="recordtrac logo">
+          </div>
+
+          <div class="col-lg-10">
+            <h1>RecordTrac</h1>
+            <h2 class="color">Public records requests made easy</h2>
+             <p>
+                RecordTrac is an open platform for agencies to communicate about public records requests in a compliant, transparent, and efficient manner. RecordTrac streamlines the process of managing responses, saving valuable staff time while also enabling the public to track online the status of all requests. 
+            </p>
+            <button type="button" class="btn btn-danger" onclick="window.open('https://docs.google.com/forms/d/1ehwtX0W1sbnCYOG4ysS4PnBvVD0AFpT4gpx7jQ2ptBI/viewform', '_blank')">REQUEST DEMO</button><br>
+            <div class="title_tag_wht">
+              <a href="/recordtrac" class="banner">Learn More</a>
+            </div>
+          </div>
+
         </div>
-        <div class="white_back"  style="padding-left: 45px;">
-          <p style="margin-bottom: 20px;">{{"recordtrac" | get_product("blurb") }}</p>
-          <strong><a href="/recordtrac" target="_blank">Learn More</a></strong>
+
+      </div>
+
+      <div class="col-lg-4 white_back promptly">
+        <div class="row">
+          <div class="col-lg-2">
+            <img class="img-responsive" src="{{ url_for('static', filename='images/promptly_logo_notext.png') }}" alt="recordtrac logo">
+          </div>
+
+          <div class="col-lg-10">
+            <h1>Promptly</h1>
+            <h2 class="color">Easy text reminders for government services</h2>
+            <button type="button" class="btn btn-primary" onclick="window.open('https://docs.google.com/forms/d/1FuwfLoFMVKMnNQvjgmZpSLm_qrukP0cNkYPJr05ELx4/viewform', '_blank')">REQUEST DEMO</button><br>
+            <div class="title_tag_wht">
+              <a href="/products/promptly" target="_blank" class="banner">Product Sheet</a>&nbsp;&nbsp;<span class="glyphicon glyphicon-save"></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 promptly productbox">
-        <div class="products tab title">
-          Promptly
-        </div>
-        <div class="white_back"  style="padding-left: 45px;">
-          <p style="margin-bottom: 20px;">{{"promptly" | get_product("blurb") }}</p>
-          <strong><a href="/products/promptly" target="_blank">Product Sheet (PDF)</a></strong>
+
+      <div class="col-lg-4 white_back cityvoice">
+        <div class="row">
+          <div class="col-lg-2">
+            <img class="img-responsive" src="{{ url_for('static', filename='images/cityvoice_logo_notext.png') }}" alt="recordtrac logo">
+          </div>
+
+          <div class="col-lg-10">
+            <h1>CityVoice</h1>
+            <h2 class="title color">Community feedback for everyone</h2>
+            <button type="button" class="btn btn-success" onclick="window.open('https://docs.google.com/forms/d/18Pc6EEhEZs-oIi8Sk4jeUTGib1AbQEwI5GRHEsSjomU/viewform', '_blank')">REQUEST DEMO</button><br>
+            <div class="title_tag_wht">
+              <a href="/products/cityvoice" target="_blank" class="banner">Product Sheet</a>&nbsp;&nbsp;<span class="glyphicon glyphicon-save"></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 cityvoice productbox">
-        <div class="products tab title">
-          CityVoice
-        </div>
-        <div class="white_back"  style="padding-left: 45px;">
-          <p style="margin-bottom: 20px;">{{"cityvoice" | get_product("blurb") }}</p>
-          <strong><a href="/products/cityvoice" target="_blank">Product Sheet (PDF)</a></strong>
-        </div>
-      </div>
-    </div> 
+
+
+    </div>
+
+ 
+
   </div>
 </div>
 <div id = "services" class="jumbotron" style="background: none;">
