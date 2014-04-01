@@ -5,7 +5,7 @@
 <div class="jumbotron white_back no-bottom">
   <div class="container">
     <div class="row" style="margin-top: 4em;">
-      <div class="col-lg-8 white_back" style="padding: 1.75em;">
+      <div class="col-lg-7 col-lg-offset-1 white_back" style="padding: 1.75em;">
         
         <div class="row">
           <div class="col-lg-2">
@@ -15,7 +15,7 @@
             <h1>RecordTrac</h1>
             <h2 class="title color">Online public records, open to everyone</h2>
             <p>RecordTrac is a new, open platform that makes it easy for agencies to communicate about public requests in a compliant, transparent, and efficient manner.</p>
-            </div>
+          </div>
            <div class="col-lg-10">
              <button type="button" class="btn btn-danger no-top" onclick="window.open('https://docs.google.com/forms/d/1ehwtX0W1sbnCYOG4ysS4PnBvVD0AFpT4gpx7jQ2ptBI/viewform', '_blank')">REQUEST DEMO</button>
             <div class="title_tag_wht">
@@ -24,6 +24,9 @@
           </div>
         </div>
 
+      </div>
+      <div class="col-lg-4" style="padding-left: .75em;">
+        <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/generic_request.png') }}" alt="recordtrac">
       </div>
     </div> 
   </div>
