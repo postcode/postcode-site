@@ -109,6 +109,8 @@ p .sml_quote{
 .white{
   color: white;
 }
+
+
 .name{
   font-family: 'Montserrat', sans-serif;
   color: #636363;
@@ -117,6 +119,7 @@ p .sml_quote{
   padding: 0px;
   line-height: 1em;
 }
+
 .position{
   color: #A1A1A1;
   font-style: italic;
@@ -345,6 +348,10 @@ a.rt_link:active {color: #E57755;}
   background: #E29681;
   border: none;
 } 
+
+.no-top {
+  margin-top: 0px;
+}
 
 .btn-inverse{
   background: white;
