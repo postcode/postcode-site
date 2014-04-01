@@ -375,6 +375,10 @@ a.rt_link:active {color: #E57755;}
   background: #F2F2F2;
 }
 
+.no-top {
+  margin-top: 0px;
+}
+
 .contact_button{
 background: white;
 border: 2px solid #636363;
