@@ -2,9 +2,9 @@
 
 {% block content %}
 <div class="recordtrac">
-<div class="jumbotron white_back">
+<div class="jumbotron white_back no-bottom">
   <div class="container">
-    <div class="row" style="margin-top: 6em; margin-bottom: 3em;">
+    <div class="row" style="margin-top: 4em;">
       <div class="col-lg-8 white_back" style="padding: 1.75em;">
         
         <div class="row">
@@ -40,9 +40,9 @@
   </div>
     <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
       <div class="col-lg-5 col-lg-offset-1" style="text-align: right;">
-      <h2 class="title color">Review Previous Requests</h2>
-      <h3 class="title">Save time for the government and public</h3>
-      <p style="padding-top: .75em;">Anyone can review current or past requests by keyword, status or department. This helps reduce duplicate requests.</p>
+      <h2 class="title color">Open records</h2>
+      <h3 class="title">Next-gen open government</h3>
+      <p class="left" style="padding-top: .75em;">Anyone &dash; requestor, agency, community member &dash; can review current or past requests by keyword, status or department. This helps reduce duplicate requests.</p>
       </div>
       <div class="col-lg-6" style="padding-left: .75em;">
         <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/review_requests.png') }}" alt="review requests">
@@ -50,37 +50,7 @@
     </div>
   </div>
 </div>
-<div class="jumbotron" style="background: #F4F4F4;">
-  <div class="container">
-    <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
-    <div class="col-lg-6 col-lg-offset-0 recordtrac" style="">
-        <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/make_requests.png') }}" alt="make requests">
-        <a class="citation_grey" href="http://www.flickr.com/photos/33863004@N00/2941708345/in/photolist-5tX2pp-5tZ8Zx-5upUic-5upWbH-5uq1kk-5uuou1-5uuqPC-5uuuuS-5uuxfL-5wnRkp-5wsdaS-5AfDaD-5FofAp-5FsvUN-5FswHs-5FsyK7-5HNkXV-5QtixY-5QLfy1-5TPuuB-5TPuwH-5TPuxP-5TPuyB-5TPuzt-5TTQ4q-5TTQ9q-5Xpuee-5Xpunn-5Xpuve-5Xpwax-5XtHrb-5XtHJY-5XtHTq-5XtJaL-5XtJcY-5XtKSh-61aUXV-61aV1k-61aV3K-61aV7p-61aVcx-61f8yA-61f8Bs-65c4wT-66nicm-67FESo-68uuaG-68BGWc-68BHaH-68BHuR-68BHzM">source:flickr.com, marcopako;</a> <a class="citation_grey" href="http://creativecommons.org/licenses/by-sa/2.0/">CC by 2.0</a>
-      </div>      
-      <div class="col-lg-5 ">
-      <h2 class="title color">Make Requests Online</h2>
-      <h3 class="title">Digitize and streamline from the start</h3>
-      <p style="padding-top: .75em;">Individuals can make requests directed at specific departments and leave their contact information for follow up.</p>
-      <p style="padding-top: .75em;">Individuals can make make requests directed at specific departments and leave their contact information for follow up.</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="jumbotron" style="background: none;">
-  <div class="container">
-    <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
-      <div class="col-lg-5 col-lg-offset-1" style="text-align: right;">
-      <h2 class="title color">Track Requests</h2>
-      <h3 class="title">Reduce fines from late responses</h3>
-      <p style="padding-top: .75em;">Track dates, requester, government point of contact, and correspondence. Sign up to receive email updates about a specific request.</p>
-      </div>
-      <div class="col-lg-6">
-        <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/track_requests.png') }}" alt="track requests">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="jumbotron" style="background: #F4F4F4;">
+<div class="jumbotron white_back">
   <div class="container">
     <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
     <div class="col-lg-6 col-lg-offset-0">
@@ -88,28 +58,60 @@
       </div>      
       <div class="col-lg-5">
         <div>
-          <h2 class="title color">Manage Responses</h2>
-          <h3 class="title">Use a transparent and efficient process</h3>
-          <p style="padding-top: .75em;">Government employees can respond to requests through a simple interface - allowing them to respond quickly with relevant information. </p>
+          <h2 class="title color">Manage responses</h2>
+          <h3 class="title">Streamline the response</h3>
+          <p class="right" style="padding-top: .75em;">Staff can respond to requests through a simple interface - allowing them to respond quickly with relevant information. </p>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="jumbotron" style="background: none;">
+<div class="jumbotron white_back">
   <div class="container">
-    <div class="row" style="margin-top: 1em; margin-bottom: 4em;">
+    <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
       <div class="col-lg-5 col-lg-offset-1" style="text-align: right;">
-      <h2 class="title color">Review Metrics</h2>
-      <h3 class="title">Understand response data for easy management</h3>
-      <p style="padding-top: .75em;">See total requests as well as average response time by department. Determine where to allocate resources and effort. </p>
+      <h2 class="title color">Track and trace requests</h2>
+      <h3 class="title">Reduce fines from late responses</h3>
+      <p class="left" style="padding-top: .75em;">Track dates, requester, government point of contact, and correspondence. Sign up to receive email updates about a specific request.</p>
       </div>
       <div class="col-lg-6">
-        <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/request_metrics.png') }}" alt="track requests">
+        <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/track_requests.png') }}" alt="track requests">
       </div>
     </div>
   </div>
 </div>
+<div class="jumbotron white_back">
+  <div class="container">
+    <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
+      <div class="col-lg-6">
+        <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/request_metrics.png') }}" alt="track requests">
+      </div>
+      <div class="col-lg-5">
+        <h2 class="title color">Measure response</h2>
+        <h3 class="title">Understand response data for easy management</h3>
+        <p class="right" style="padding-top: .75em;">See total requests as well as average response time by department. Determine where to allocate resources and effort. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="jumbotron white_back">
+  <div class="container">
+    <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
+      <div class="col-lg-5 col-lg-offset-1" style="text-align: right;">
+        <h2 class="title color">Make requests online</h2>
+        <h3 class="title">Digitize and streamline from the start</h3>
+        <p style="padding-top: .75em;">Individuals can make requests directed at specific departments and leave their contact information for follow up.</p>
+      </div>
+      <div class="col-lg-6">
+        <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/make_requests.png') }}" alt="make requests">
+        <a class="citation_grey" href="http://www.flickr.com/photos/33863004@N00/2941708345/in/photolist-5tX2pp-5tZ8Zx-5upUic-5upWbH-5uq1kk-5uuou1-5uuqPC-5uuuuS-5uuxfL-5wnRkp-5wsdaS-5AfDaD-5FofAp-5FsvUN-5FswHs-5FsyK7-5HNkXV-5QtixY-5QLfy1-5TPuuB-5TPuwH-5TPuxP-5TPuyB-5TPuzt-5TTQ4q-5TTQ9q-5Xpuee-5Xpunn-5Xpuve-5Xpwax-5XtHrb-5XtHJY-5XtHTq-5XtJaL-5XtJcY-5XtKSh-61aUXV-61aV1k-61aV3K-61aV7p-61aVcx-61f8yA-61f8Bs-65c4wT-66nicm-67FESo-68uuaG-68BGWc-68BHaH-68BHuR-68BHzM">source:flickr.com, marcopako;</a> <a class="citation_grey" href="http://creativecommons.org/licenses/by-sa/2.0/">CC by 2.0</a>
+      </div>      
+    </div>
+  </div>
+</div>
+
+
+
 <div id="in_use" class="jumbotron" style="background: url(static/images/oakland.jpg);">
   <div class="container">
     <div class="row" style="margin-top: 1em; margin-bottom: 3em;">
