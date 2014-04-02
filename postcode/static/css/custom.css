@@ -109,6 +109,8 @@ p .sml_quote{
 .white{
   color: white;
 }
+
+
 .name{
   font-family: 'Montserrat', sans-serif;
   color: #636363;
@@ -117,6 +119,7 @@ p .sml_quote{
   padding: 0px;
   line-height: 1em;
 }
+
 .position{
   color: #A1A1A1;
   font-style: italic;
@@ -266,8 +269,12 @@ a.rt_link:active {color: #E57755;}
 .recordtrac h2 {
     margin-bottom: 1.25em;
 }
-.recordtrac p {
+.recordtrac p.right{
   margin: 0em 2em .75em 0em;
+}
+
+.recordtrac p.left{
+  margin: 0em 0em .75em 2em;
 }
 
 
@@ -346,6 +353,14 @@ a.rt_link:active {color: #E57755;}
   border: none;
 } 
 
+.no-top {
+  margin-top: 0px;
+}
+
+.no-bottom {
+  margin-bottom: 0px;
+}
+
 .btn-inverse{
   background: white;
   border: 2px solid white;
@@ -358,6 +373,10 @@ a.rt_link:active {color: #E57755;}
 
 .btn-inverse:hover{
   background: #F2F2F2;
+}
+
+.no-top {
+  margin-top: 0px;
 }
 
 .contact_button{
