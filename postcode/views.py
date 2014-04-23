@@ -7,14 +7,15 @@ from jinja_filters import *
 import os
 
 ga_tracking_code = os.getenv('GA_TRACKING_CODE', 'Not defined!')
+remarketing_id = os.getenv('REMARKETING_ID', 'Not defined!')
 
 # Submitting a new request
 def index():
-	return render_template('index.html', ga_tracking_code = ga_tracking_code)
+	return render_template('index.html', ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id)
 
 def any_page(page):
 	try:
-		return render_template('%s.html' %(page), ga_tracking_code = ga_tracking_code)
+		return render_template('%s.html' %(page), ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id)
 	except:
 		return index()
 
