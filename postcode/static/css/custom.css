@@ -274,7 +274,11 @@ a.rt_link:active {color: #E57755;}
     color: #939597;
 }
 .recordtrac h2 {
-    margin-bottom: 1.25em;
+    margin-bottom: .5em;
+}
+.recordtrac p{
+  margin-top: .75em;
+  margin-bottom: .75em;
 }
 .recordtrac p.right{
   margin: 0em 2em .75em 0em;
@@ -282,6 +286,11 @@ a.rt_link:active {color: #E57755;}
 
 .recordtrac p.left{
   margin: 0em 0em .75em 2em;
+}
+
+.recordtrac .shim{
+  margin-top: 8em;
+  margin-bottom: 4em;
 }
 
 
