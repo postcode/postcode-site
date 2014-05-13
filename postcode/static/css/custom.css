@@ -106,6 +106,13 @@ p .sml_quote{
 .shim_r{
   margin-right: .75em;
 }
+.shim_nav{
+  margin-top: 75px;
+}
+.shim_video{
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
 .white{
   color: white;
 }
