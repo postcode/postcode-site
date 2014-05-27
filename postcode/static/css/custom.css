@@ -117,6 +117,9 @@ p .sml_quote{
   color: white;
 }
 
+.bio{
+  margin-top: 2em;
+}
 
 .name{
   font-family: 'Montserrat', sans-serif;
@@ -125,6 +128,11 @@ p .sml_quote{
   margin-top: 5px;
   padding: 0px;
   line-height: 1em;
+  width
+}
+.bio img {
+  width: 150px;
+  padding-top: 1em;
 }
 
 .position{
@@ -411,6 +419,7 @@ color: white;
 display: inline; 
 font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
+margin-top: 1em;
 padding: .25em .6em;
 -moz-box-shadow:    0px 0px 25px -3px #FFFFFF;
 -webkit-box-shadow: 0px 0px 25px -3px #FFFFFF;
@@ -424,7 +433,8 @@ color: #939597;
 display: inline; 
 font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
-margin-top: 10px;
+margin-top: 1em;
+margin-bottom: .75em;
 padding: .25em .6em;
 }
 /* 
