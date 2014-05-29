@@ -282,8 +282,36 @@ a.rt_link:active {color: #E57755;}
     color: #939597;
 }
 .recordtrac h2 {
-    margin-bottom: .5em;
+    margin-bottom: .1em;
 }
+.recordtrac h3{
+  border: none;
+  color: #BABABA;  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45em; 
+  letter-spacing: .14em;
+  margin: 0em;
+  word-spacing: .23em;
+
+}
+.recordtrac h4{
+  border: none;
+  color: #939597;  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15em;
+  margin-bottom: .5em;
+  padding: 0em; 
+}
+.recordtrac h5{ 
+  border: none;
+  color: #939597; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: .75em; 
+  margin-top: 1em;
+  margin-bottom: .75em;
+  padding: .25em .6em;
+}
+
 .recordtrac p{
   margin-top: .75em;
   margin-bottom: .75em;
@@ -296,9 +324,21 @@ a.rt_link:active {color: #E57755;}
   margin: 0em 0em .75em 2em;
 }
 
+.recordtrac button{
+  margin-top: 2em;
+}
+
+.rt_counter p{
+  margin-top: 1em;
+}
+
 .shim_RT{
-  margin-top: 8em;
-  margin-bottom: 4em;
+  margin-top: 5.5em;
+  margin-bottom: 2em;
+}
+
+.recordtrac .video{
+  margin: 3.5em 0em 2.5em;
 }
 
 
@@ -335,6 +375,9 @@ a.rt_link:active {color: #E57755;}
 /* Buttons & Tags */
 
 .glyphicon-save{
+    color: #636363;
+}
+.glyphicon-chevron-down{
     color: #636363;
 }
 .glyphicon-ok {
@@ -437,6 +480,7 @@ margin-top: 1em;
 margin-bottom: .75em;
 padding: .25em .6em;
 }
+
 /* 
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
