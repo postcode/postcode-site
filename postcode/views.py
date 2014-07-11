@@ -5,6 +5,7 @@ from flask import render_template, url_for, redirect
 from postcode import app
 from jinja_filters import *
 import os
+import sys, traceback
 
 ga_tracking_code = os.getenv('GA_TRACKING_CODE', 'Not defined!')
 remarketing_id = os.getenv('REMARKETING_ID', 'Not defined!')
@@ -17,6 +18,7 @@ def any_page(page):
 	try:
 		return render_template('%s.html' %(page), ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id)
 	except:
+                app.logger.error(traceback.format_exception(*sys.exc_info()))
 		return index()
 
 def product_page(product):
