@@ -69,6 +69,10 @@ h3{
   margin-top: 0em; 
   padding: 0px;
 }
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #939597;
+}
 h5 {
   color: #636363;
   font-size: .85em;
@@ -347,13 +351,32 @@ a.rt_link:active {color: #E57755;}
   margin: 0em 1em 1em 0em; 
 }
 .promptly .color{
-  color: #5c7dbe;
+  color: #789FD3;
 }
 .promptly h1 {
-  font-size: 1.25em;
+    color: #939597;
 }
 .promptly h2 {
-  font-size: .9em;
+    margin-bottom: .1em;
+}
+.promptly h3{
+  border: none;
+  color: #BABABA;  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45em; 
+  letter-spacing: .14em;
+  margin: 0em;
+  word-spacing: .23em;
+
+}
+.promptly h4{
+  font-size: 1.25em;
+}
+.promptly h5{
+  font-size: .75em;  
+}
+.promptly button{
+  margin-top: 2em;
 }
 
 .cityvoice {
@@ -362,10 +385,10 @@ a.rt_link:active {color: #E57755;}
 .cityvoice .color{
   color: #6cc5ad;
 }
-.cityvoice h1 {
+.cityvoice h4 {
   font-size: 1.25em;
 }
-.cityvoice h2 {
+.cityvoice h5 {
   font-size: .9em;
 }
 
@@ -386,7 +409,7 @@ a.rt_link:active {color: #E57755;}
 }
 
 .btn-primary{
-  background: #5c7dbe;
+  background: #789FD3;
   border: #5c7dbe;
   font-size: .75em;
   padding: .4em 1.3em;
@@ -426,6 +449,7 @@ a.rt_link:active {color: #E57755;}
 
 .no-bottom {
   margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .btn-inverse{
