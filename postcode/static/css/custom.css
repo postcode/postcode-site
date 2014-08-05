@@ -408,6 +408,9 @@ a.rt_link:active {color: #E57755;}
   margin-right: .75em;
 }
 
+.btn {
+  margin-top: 10px;
+}
 .btn-primary{
   background: #789FD3;
   border: #5c7dbe;
@@ -505,12 +508,11 @@ margin-bottom: .75em;
 padding: .25em .6em;
 }
 
-/* 
--moz-border-radius: 3px;
--webkit-border-radius: 3px;
-border-radius: 3px; 
-*/
-}
+
+
+
+
+
 
 
 
