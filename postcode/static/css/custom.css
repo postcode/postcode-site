@@ -181,6 +181,12 @@ p .sml_quote{
     filter:alpha(opacity=98); /* For IE8 and earlier */
 }
 
+.navbar-brand{
+  color: #939597;
+  font-family:'Montserrat', sans-serif;
+  font-size: 1.35em;
+}
+
 /* footer */
 
 footer{
@@ -482,12 +488,12 @@ a.rt_link:active {color: #E57755;}
 
 .contact_button{
 background: white;
-border: 2px solid #636363;
+border: 1px solid #939597;
 display: inline;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 border-radius: 3px; /* future proofing */
-padding: 10px 15px;
+padding: 4px 7px;
 }
 
 .title_tag{
