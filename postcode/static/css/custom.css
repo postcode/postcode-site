@@ -190,6 +190,10 @@ footer{
   padding-bottom: 25px;
 }
 
+footer h2{
+  padding-top: 1em;
+}
+
 /* link */
 a:link {color: #86C9D9;}     
 a:visited {color: #86C9D9;}  
