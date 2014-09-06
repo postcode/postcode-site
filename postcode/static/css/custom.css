@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
@@ -354,9 +354,48 @@ a.rt_link:active {color: #E57755;}
 .recordtrac .video{
   margin: 3.5em 0em 2.5em;
 }
+.modal-content{
+  padding: 30px 50px 50px 50px;
+}
+.newRT{
+  background-color: #EC916F;
+}
+.newRT h2{
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  font-size: 3em; 
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.newRT h4{
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  font-size: 1.25em; 
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-top: 1em;
+}
+.newRT p{
+  color: white;
+  display: inline;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+.rtform{
+  border: 1px solid white;
+  margin: 2.5em 0em 1.5em 0em; 
+  width: 300px; 
+  height: 200px
+}
+.modal-content img{
+  width: 20px;
+  display: inline;
+  margin-right: .5em;
+}
 
 
 
+/* promptly */
 .promptly {
   margin: 0em 1em 1em 0em; 
 }
