@@ -10,4 +10,5 @@ from flask import Flask
 # Initialize Flask app 
 app = Flask(__name__)
 app.debug = True
+app.config.from_object('config')
 

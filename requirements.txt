@@ -3,3 +3,4 @@ Jinja2==2.6
 gunicorn==0.17.4
 newrelic==2.8.0.7
 simplejson==3.5.2
+Flask-WTF==0.9.5

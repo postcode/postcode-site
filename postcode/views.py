@@ -6,6 +6,7 @@ from postcode import app
 from jinja_filters import *
 import os
 import sys, traceback
+from forms import signupForm
 
 ga_tracking_code = os.getenv('GA_TRACKING_CODE', 'Not defined!')
 remarketing_id = os.getenv('REMARKETING_ID', 'Not defined!')
@@ -16,7 +17,8 @@ def index():
 
 def any_page(page):
 	try:
-		return render_template('%s.html' %(page), ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id)
+		form = signupForm()
+		return render_template('%s.html' %(page), ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id, form=form)
 	except:
                 app.logger.error(traceback.format_exception(*sys.exc_info()))
 		return index()

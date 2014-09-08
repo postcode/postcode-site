@@ -8,7 +8,20 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h2>Welcome to the new <span style="font-family:'Montserrat', sans-serif; font-weight: 800;">RecordTrac</span></h2>
         <h4><em>Sign up for a free pilot</em></h4>
-        <div class="rtform"><p>form goes here</p></div>
+        <div class="rtform">
+          <form action="" method="post" name="signup">
+            {{form.hidden_tag()}}
+              <p>
+                  Please enter your email address:<br>
+                  {{form.email()}}<br>
+              </p>
+              <p>
+                  Please enter your name:<br>
+                  {{form.name()}}<br>
+              </p>
+              <p><input type="submit" value="Sign Up"></p>
+          </form>
+        </div>
         <img class="img-responsive" src="{{ url_for('static', filename='images/recordtrac_logo_wht_inverse.png') }}" alt="recordtrac logo"><p>Leading the way on public records requests.</p>
       </div>
     </div>
