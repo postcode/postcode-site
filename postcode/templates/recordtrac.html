@@ -14,6 +14,9 @@
               <p>
                   Please enter your email address:<br>
                   {{form.email()}}<br>
+                  {% for error in form.errors.email %}
+                    <span style="color: red;">[{{error}}]</span>
+                  {% endfor %}<br>
               </p>
               <p>
                   Please enter your name:<br>

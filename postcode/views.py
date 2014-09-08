@@ -1,7 +1,7 @@
 """Contains all functions that render templates/html for the app.
 """
 
-from flask import render_template, url_for, redirect
+from flask import render_template, url_for, redirect, flash
 from postcode import app
 from jinja_filters import *
 import os
@@ -17,11 +17,22 @@ def index():
 
 def any_page(page):
 	try:
-		form = signupForm()
-		return render_template('%s.html' %(page), ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id, form=form)
+		return render_template('%s.html' %(page), ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id)
 	except:
                 app.logger.error(traceback.format_exception(*sys.exc_info()))
 		return index()
 
 def product_page(product):
 	return redirect(url_for('static', filename='content/%s.pdf' %(product)))
+
+@app.route('/recordtrac', methods = ['GET', 'POST'])
+def recordtrac():
+	form = signupForm()
+	if form.validate_on_submit():
+		flash('Signup="' + form.email.data + '"')
+		return redirect('/')
+	try:
+		return render_template('recordtrac.html', ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id, form=form)
+	except:
+                app.logger.error(traceback.format_exception(*sys.exc_info()))
+		return index()
