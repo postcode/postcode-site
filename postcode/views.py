@@ -63,7 +63,7 @@ def signup_email(user):
 	message_user = sendgrid.Mail()
 	message_user.add_to('%s' %user.email)
 	message_user.set_subject('RecordTrac Sign Up')
-	message_user.set_html("Thanks for signing up for RecordTrac! We'll be in touch soon. Look for updates at <a href='http://www.postcode.io/recordtrac'>http://www.postcode.io/recordtrac</a>")
+	message_user.set_html(user_html)
 	message_user.set_from('admin@postcode.io')
 	status, msg_user = sg.send(message_user)
 	app.logger.debug(msg_user)
