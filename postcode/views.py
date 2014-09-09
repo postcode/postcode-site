@@ -59,6 +59,7 @@ def signup_email(user):
 	status, msg_pc = sg.send(message_postcode)
 	app.logger.debug(msg_pc)
 
+	user_html = "<p style='margin-bottom: 20px;'><img width='100' height='100' src='http://www.postcode.io/static/images/recordtrac_logo_notext.png'/></p><p>Thanks for getting in touch with us about RecordTrac!</p><p>We're leading the way on public records requests and are excited you're interested in joining us. We'll follow up with you shortly to set up a customized pilot for your organization.</p><p>If you have any questions don't hesitate to call or send us an email.</p><p>tel: (844) 767-8263</p><p>email: <a href='mailto:'recordtrac@postcode.io'>recordtrac@postcode.io</a></p>"
 	message_user = sendgrid.Mail()
 	message_user.add_to('%s' %user.email)
 	message_user.set_subject('RecordTrac Sign Up')
