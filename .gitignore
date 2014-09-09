@@ -4,6 +4,7 @@
 _site
 *.pyc
 .env*
+*/config.py
 
 # @waltz's emacs gitignore partee pak
 *~
