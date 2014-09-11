@@ -1,5 +1,9 @@
- $(document).ready(function() {
+$(document).ready(function() {
   $('#newrecordtrac').modal({
-  show: true,
+    show: true,
   })
- });
+
+  $('#rt-signup').click(function(){
+    $('#newrecordtrac').modal('hide')
+  })
+});

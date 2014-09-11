@@ -43,7 +43,6 @@ def recordtrac():
 			db_session.add(user)
 			db_session.commit()
 			signup_email(user)
-			return redirect(url_for('/'))
 		return render_template('recordtrac.html', ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id, form=form)
 	except:
                 app.logger.error(traceback.format_exception(*sys.exc_info()))
@@ -64,7 +63,7 @@ def signup_email(user):
 	message_user.add_to('%s' %user.email)
 	message_user.set_subject('RecordTrac Sign Up')
 	message_user.set_html(user_html)
-	message_user.set_from('admin@postcode.io')
+	message_user.set_from('recordtrac@postcode.io')
 	status, msg_user = sg.send(message_user)
 	app.logger.debug(msg_user)
 	return msg_user, msg_pc
