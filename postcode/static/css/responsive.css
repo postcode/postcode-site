@@ -1,3 +1,8 @@
 @media(max-width: 40em) { 
-  p {font-size: .7em;}
+  p {
+    font-size: .7em;
+  }
+  .rt_counter .text-right {
+    text-align: left;
+  }
 } /* max-width 640px, mobile-only styles */
