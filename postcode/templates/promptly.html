@@ -2,146 +2,111 @@
 
 {% block content %}
 <div class="promptly">
-<div class="jumbotron white_back no-bottom">
-  <div class="container">
+  <div class="jumbotron white_back no-bottom">
+    <div class="container">
 
-    <div class="row  shim_nav">
-      <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-1 shim_top">
-        <div class="row shim_top">
-          <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
-            <img class="img-responsive" src="{{ url_for('static', filename='images/promptly_logo_notext.png') }}" alt="promptly logo">
+      <div class="row  shim_nav">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-1 shim_top">
+          <div class="row shim_top">
+            <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+              <img class="img-responsive" src="{{ url_for('static', filename='images/promptly_logo_notext.png') }}" alt="promptly logo">
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10">
+              <h1>Promptly</h1>
+              <h3>Easy Text Messaging<br> for Governments</h3>
+              <button type="button" class="btn btn-primary no-top" onclick="window.open('https://docs.google.com/forms/d/1FuwfLoFMVKMnNQvjgmZpSLm_qrukP0cNkYPJr05ELx4/viewform', '_blank')">REQUEST DEMO</button>
+              <h5>
+                <a href="/products/promptly" target="_blank" class="banner">PRODUCT SHEET (PDF)</a>&nbsp;&nbsp;<span class="glyphicon glyphicon-save"></span>
+              </h5>
+            </div>
           </div>
-          <div class="col-sm-10 col-md-10 col-lg-10">
-            <h1>Promptly</h1>
-            <h3>Easy Text Messaging<br> for Governments</h3>
-            <button type="button" class="btn btn-primary no-top" onclick="window.open('https://docs.google.com/forms/d/1FuwfLoFMVKMnNQvjgmZpSLm_qrukP0cNkYPJr05ELx4/viewform', '_blank')">REQUEST DEMO</button>
-            <h5>
-              <a href="/products/promptly" target="_blank" class="banner">PRODUCT SHEET (PDF)</a>&nbsp;&nbsp;<span class="glyphicon glyphicon-save"></span>
-            </h5>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+          <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/cellphone.png') }}" alt="recordtrac">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features">
+    <div id ="features" class="jumbotron">
+      <div class="container">
+      <div class="row" style="margin-top: 1em; margin-bottom: 3em;">
+        <div class="col-lg-12" style="text-align: center;">
+          <div class="title_tag">FEATURES</div>
+        </div>
+      </div>
+        <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
+          <div class="col-lg-5 col-lg-offset-1">
+          <h2 class="title color">Create &amp; Manage<br> Recipient Lists</h2>
+          <p class="left" style="padding-top: .75em;"> Import and modify recipient lists manually or through automated integrations. Create multiple lists and update them over time.</p>
+          </div>
+          <div class="col-lg-6" style="padding-left: .75em;">
+            <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/groups_promptly.png') }}" alt="review requests">
           </div>
         </div>
       </div>
-      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-        <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/cellphone.png') }}" alt="recordtrac">
+    </div>
+    <div class="jumbotron white_back">
+      <div class="container">
+        <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
+          <div class="col-lg-5">
+            <div class="feature_text">
+              <h2 class="title color">Schedule Text Notifications</h2>
+              <p class="right" style="padding-top: .75em;">Select from lists of recipient  and messages as well as dates and times to easily create and send text message notifications. </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-lg-offset-0">
+            <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/notification_promptly.png') }}" alt="track requests">
+          </div>      
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div id ="features" class="jumbotron">
-  <div class="container">
-  <div class="row" style="margin-top: 1em; margin-bottom: 3em;">
-    <div class="col-lg-12" style="text-align: center;">
-      <div class="title_tag">FEATURES</div>
-    </div>
-  </div>
-    <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
-      <div class="col-lg-5 col-lg-offset-1" style="text-align: right;">
-      <h2 class="title color">Create & Manage<br> Recipient Lists</h2>
-      <p class="left" style="padding-top: .75em;"> Import and modify recipient lists manually or through automated integrations. Create multiple lists and update them over time.</p>
-      </div>
-      <div class="col-lg-6" style="padding-left: .75em;">
-        <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/groups_promptly.png') }}" alt="review requests">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="jumbotron white_back">
-  <div class="container">
-    <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
-    <div class="col-lg-6 col-lg-offset-0">
-        <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/notification_promptly.png') }}" alt="track requests">
-      </div>      
-      <div class="col-lg-5">
-        <div>
-          <h2 class="title color">Schedule Text Notifications</h2>
-          <p class="right" style="padding-top: .75em;">Select from lists of recipient  and messages as well as dates and times to easily create and send text message notifications. </p>
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
+          <div class="col-lg-5 col-lg-offset-1 feature_text">
+            <h2 class="title color">Review Message &<br> Message Response Data</h2>
+            <p class="left" style="padding-top: .75em;">Easily understand amounts and dates of past messages. View response metrics to measure the success of your outreach.</p>
+          </div>
+          <div class="col-lg-6">
+            <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/dashboard_promptly.png') }}" alt="track requests">
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="jumbotron">
-  <div class="container">
-    <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
-      <div class="col-lg-5 col-lg-offset-1" style="text-align: right;">
-        <h2 class="title color">Review Message &<br> Message Response Data</h2>
-        <p class="left" style="padding-top: .75em;">Easily understand amounts and dates of past messages. View response metrics to measure the success of your outreach.</p>
-      </div>
-      <div class="col-lg-6">
-        <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/dashboard_promptly.png') }}" alt="track requests">
+  <div id="in_use" class="jumbotron" style="background: url(static/images/sanfrancisco_promptly.jpg);">
+    <div class="container">
+      <div class="row" style="margin-top: 1em; margin-bottom: 3em;">
+      <div class="col-lg-12" style="text-align: center;">
+        <div class="title_tag">IN USE</div>
       </div>
     </div>
-  </div>
-</div>
-<div id="in_use" class="jumbotron" style="background: url(static/images/sanfrancisco_promptly.jpg);">
-  <div class="container">
-    <div class="row" style="margin-top: 1em; margin-bottom: 3em;">
-    <div class="col-lg-12" style="text-align: center;">
-      <div class="title_tag">IN USE</div>
-    </div>
-  </div>
-    <div class="row" style="margin-top: .5em; margin-bottom: 1em;">
-      <div class="col-lg-6 col-lg-offset-6">
-        <div class="white_back">
-          <h2 class="title">San Francisco, CA</h2>
-        <p>Originally built for the County of San Francisco Human Services Agency, Promptly texts recipients about upcoming due dates, terminations, and other information clients need to be aware of. Promptly was the first text messaging app in the US built for use by human services agencies.</p>
-        <h2 class=" title shim shim_top"><em>“Our City strives for strong, healthy communities that can participate in a prosperous economy. Promptly helps us achieve this by enabling beneficiaries of programs like CalFresh to keep food on the table for their families.”</em></h2>
-        <br>
-        <p>Ed Lee<br>Mayor, San Francisco</p>
-      </div>
+      <div class="row" style="margin-top: .5em; margin-bottom: 1em;">
+        <div class="col-lg-6 col-lg-offset-6">
+          <div class="white_back feature_text">
+            <h2 class="title">San Francisco, CA</h2>
+          <p>Originally built for the County of San Francisco Human Services Agency, Promptly texts recipients about upcoming due dates, terminations, and other information clients need to be aware of. Promptly was the first text messaging app in the US built for use by human services agencies.</p>
+          <h2 class=" title shim shim_top"><em>“Our City strives for strong, healthy communities that can participate in a prosperous economy. Promptly helps us achieve this by enabling beneficiaries of programs like CalFresh to keep food on the table for their families.”</em></h2>
+          <br>
+          <p>Ed Lee<br>Mayor, San Francisco</p>
+        </div>
+        </div>
       </div>
     </div>
+    <div style="text-align: right;">
+      <a class="citation" href="https://www.flickr.com/photos/salim/402620871/in/photolist-Bzxaa-ekFJyQ-ba8H-eD5M4-hFTq1W-dZcoQ1-39Wstq-nPu9UG-mtx6x-bBQhJX-Bxufq-Bzwuu-BzwPa-6u7c4x-v8jZX-a3nCoB-9iMCFA-fFGNFp-7Ddebk-mz3ZHP-Ms4XV-fNR4HB-vb2nY-fFYWRC-zAcT5-8N6ZoM-9eZSR1-9me99e-fmsCCg-81Gf9T-dSFuxm-eEM8Tx-4wg7QM-fgaMjG-jDogJS-fn1Uso-gn5i4k-6yCy3K-5McVFN-cdP6Rh-4UruoP-v8te1-8Sbq6x-dHMe7o-hwKndm-5KY75y-v8tdW-vaZrB-nLnbnk-2WgNrK">source:flickr.com, Salim Virji;</a> <a class="citation" href="http://creativecommons.org/licenses/by/2.0/">CC by 2.0</a>
+    </div>
   </div>
-  <div style="text-align: right;">
-    <a class="citation" href="https://www.flickr.com/photos/salim/402620871/in/photolist-Bzxaa-ekFJyQ-ba8H-eD5M4-hFTq1W-dZcoQ1-39Wstq-nPu9UG-mtx6x-bBQhJX-Bxufq-Bzwuu-BzwPa-6u7c4x-v8jZX-a3nCoB-9iMCFA-fFGNFp-7Ddebk-mz3ZHP-Ms4XV-fNR4HB-vb2nY-fFYWRC-zAcT5-8N6ZoM-9eZSR1-9me99e-fmsCCg-81Gf9T-dSFuxm-eEM8Tx-4wg7QM-fgaMjG-jDogJS-fn1Uso-gn5i4k-6yCy3K-5McVFN-cdP6Rh-4UruoP-v8te1-8Sbq6x-dHMe7o-hwKndm-5KY75y-v8tdW-vaZrB-nLnbnk-2WgNrK">source:flickr.com, Salim Virji;</a> <a class="citation" href="http://creativecommons.org/licenses/by/2.0/">CC by 2.0</a>
-  </div>
-</div>
-<!-- new links for later
-<div id="in_the_news" class="jumbotron" style="background: #F4F4F4;">
-  <div class="container">
-  	<div class="row" style="margin-top: 1em; margin-bottom: 3em;">
-		<div class="col-lg-12" style="text-align: center;">
-			<div class="title_tag">NEWS</div>
-		</div>
-	</div>
-    <div class="row" style="margin-top: 1em; margin-bottom: 2.5em;">    	
-      <div class="col-lg-3">
-        <div>
-          <p>"Civic App of the Year (2013)"</p>
-          <a href="http://awards.govfresh.com/2013-govfresh-awards/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/govfresh.png') }}" alt="govfresh logo"></a>
-        </div>
-      </div>
-      <div class="col-lg-3 ">
-        <div>
-          <p>"...goals have included increasing efficiency and becoming more transparent and RecordTrac does both."</p>
-          <a href="http://oaklandlocal.com/2013/10/oaktech-citys-new-recordtrac-app-launches-built-by-code-for-america-fellows/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/oakland_local.png') }}" alt="Oakland Local logo"></a>
-        </div>
-      </div>
-       <div class="col-lg-3">
-        <div>
-          <p>"'It's access to information.'"</p>
-          <a href="http://arstechnica.com/business/2013/03/urban-activists-hack-their-way-towards-open-government/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/ars-technica-logo.png') }}" alt="ars-technica logo"></a>
-        </div>
-      </div>
-      <div class="col-lg-3">
-        <div>
-          <p>"[RecordTrac] addresses citizens’ expectations of a government that responds quickly to their needs."</p>
-          <a href="http://oaklandnorth.net/2013/10/02/oakland-code-for-america-unveil-public-records-program/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/oaklandnorth_logo.png') }}" alt="Oakland North logo"></a>
+  <div class="jumbotron" style="background: none;">
+    <div class="container">
+      <div class="row" style="margin-top: 4em; margin-bottom: 5em; text-align: center;">      
+        <div class="col-lg-12">
+            <h1 class="title color">I want Promptly at my agency.</h1>
+            <button type="button" class="btn btn-primary no-top" onclick="window.open('https://docs.google.com/forms/d/1FuwfLoFMVKMnNQvjgmZpSLm_qrukP0cNkYPJr05ELx4/viewform', '_blank')">GET PROMPTLY</button>
         </div>
       </div>
     </div>
   </div>
-</div>
--->
-<div class="jumbotron" style="background: none;">
-  <div class="container">
-    <div class="row" style="margin-top: 4em; margin-bottom: 5em; text-align: center;">      
-      <div class="col-lg-12">
-          <h1 class="title color">I want Promptly at my agency.</h1>
-          <button type="button" class="btn btn-primary no-top" onclick="window.open('https://docs.google.com/forms/d/1FuwfLoFMVKMnNQvjgmZpSLm_qrukP0cNkYPJr05ELx4/viewform', '_blank')">GET PROMPTLY</button>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
 {% endblock content %}
