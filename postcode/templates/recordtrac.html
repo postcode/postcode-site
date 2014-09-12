@@ -2,13 +2,18 @@
 
 {% block content %}
 
-  <div class="modal fade bs-example-modal-lg" id="newrecordtrac" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content newRT">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h2>Welcome to the new <span style="font-family:'Montserrat', sans-serif; font-weight: 800;">RecordTrac</span></h2>
-        <h4><em>Sign up for a free pilot</em></h4>
-        <div class="rtform">
+  <div id="newrecordtrac" class="newRT">
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-offset-1 col-md-6 col-lg-5">
+          <h2>Lead the way on public records requests.</h2>
+          <div class="signup-footer">
+            <img class="signup-logo" width="20px" src="{{ url_for('static', filename='images/recordtrac_logo_wht_inverse.png') }}" alt="recordtrac logo">
+            <p>Welcome to the new <span style="font-family:'Montserrat', sans-serif; font-weight: 800;">RecordTrac</span></p>
+          </div>
+        </div>
+        <div class="rtform col-md-6 col-lg-6">
+          <h4><em>Sign up for a free custom pilot.</em></h4>
           <form action="" method="post" name="signup" class="form-group">
             {{form.hidden_tag()}}
                 <div class="form-group">
@@ -22,11 +27,9 @@
                   <p>Name:</p>
                   {{form.name(class="form-control")}}
                 </div>
-              </p>
-              <p><input id="rt-signup" type="submit" value="Sign Up" class="btn btn-primary no-top"></p>
+              <input id="rt-signup" type="submit" value="GET PILOT" class="btn btn-success no-top rt-signup"></p>
           </form>
         </div>
-        <img class="img-responsive" src="{{ url_for('static', filename='images/recordtrac_logo_wht_inverse.png') }}" alt="recordtrac logo"><p>Leading the way on public records requests.</p>
       </div>
     </div>
   </div>
