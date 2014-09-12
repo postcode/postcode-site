@@ -10,4 +10,8 @@
     margin-top: 30px;
   }
 
+  .news-item {
+    margin-bottom: 40px;
+  }
+
 } /* max-width 640px, mobile-only styles */
