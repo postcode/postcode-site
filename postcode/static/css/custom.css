@@ -479,7 +479,7 @@ a.rt_link:active {color: #E57755;}
 .btn-danger{
   background: #E57755;
   border: #E57755;
-  font-size: 1em;
+  font-size: .75em;
   padding: .4em 1.3em;
   margin-top: .75em;
 }
