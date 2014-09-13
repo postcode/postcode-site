@@ -43,6 +43,7 @@ def recordtrac():
 			db_session.add(user)
 			db_session.commit()
 			signup_email(user)
+			return render_template('recordtrac-confirm.html', ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id)
 		return render_template('recordtrac.html', ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id, form=form)
 	except:
                 app.logger.error(traceback.format_exception(*sys.exc_info()))
