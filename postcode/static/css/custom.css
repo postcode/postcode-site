@@ -377,6 +377,10 @@ a.rt_link:active {color: #E57755;}
   font-size: 1.1em;
   font-weight: 300;
 }
+
+.newRT a {
+  color: white;
+}
 .rtform{
   margin-bottom: 1.3em; 
 
