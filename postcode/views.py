@@ -12,7 +12,6 @@ import logging
 from logging.handlers import RotatingFileHandler
 from postcode.database import db_session
 import sendgrid
-import pprint
 
 ga_tracking_code = os.getenv('GA_TRACKING_CODE', 'Not defined!')
 remarketing_id = os.getenv('REMARKETING_ID', 'Not defined!')
@@ -40,16 +39,13 @@ def recordtrac():
 	form = signupForm()
 	try:
 		if request.method == 'POST' and form.validate():
-			pp = pprint.PrettyPrinter(indent=4)
-			app.logger.debug(request.get_json(force=True))
-			# app.logger.debug(request)
-			# user = Signup(request.json['email'], request.json['name'])
-			# db_session.add(user)
-			# db_session.commit()
-			# signup_email(user)
+			user = Signup(form.email.data, form.name.data)
+			db_session.add(user)
+			db_session.commit()
+			signup_email(user)
 		return render_template('recordtrac.html', ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id, form=form)
 	except:
-        	app.logger.error(traceback.format_exception(*sys.exc_info()))
+                app.logger.error(traceback.format_exception(*sys.exc_info()))
 		return index()
 
 def signup_email(user):
