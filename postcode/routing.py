@@ -10,8 +10,11 @@ routing = {
 	'any_page':{
 		'url': '/<page>'
 	},
-		'product_page':{
-		'url': '/products/<string:product>'
+	'product_page':{
+	'url': '/products/<string:product>'
+	},
+	'recordtrac':{
+	'url': '/recordtrac'
 	}
 }
 
