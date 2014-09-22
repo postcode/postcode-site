@@ -12,9 +12,6 @@ routing = {
 	},
 	'product_page':{
 	'url': '/products/<string:product>'
-	},
-	'recordtrac':{
-	'url': '/recordtrac'
 	}
 }
 
