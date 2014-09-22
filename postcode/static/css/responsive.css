@@ -1,0 +1,17 @@
+@media(max-width: 40em) { 
+  p {
+    font-size: .7em;
+  }
+  .rt_counter .text-right {
+    text-align: left;
+  }
+  
+  .shim_RT {
+    margin-top: 30px;
+  }
+
+  .news-item {
+    margin-bottom: 40px;
+  }
+
+} /* max-width 640px, mobile-only styles */

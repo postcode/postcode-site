@@ -1,36 +1,93 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+  <div id="newrecordtrac" class="newRT">
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-offset-1 col-md-6 col-lg-5">
+          <h2>Lead the way on public records requests.</h2>
+          <div class="signup-footer">
+            <img class="signup-logo" width="20px" src="{{ url_for('static', filename='images/recordtrac_logo_wht_inverse.png') }}" alt="recordtrac logo">
+            <p>Welcome to the new <span style="font-family:'Montserrat', sans-serif; font-weight: 800;">RecordTrac</span></p>
+          </div>
+        </div>
+        <div class="rtform col-md-6 col-lg-6">
+          <h4><em>Sign up for a free custom pilot.</em></h4>
+          <form action="" method="post" name="signup" class="form-group">
+            {{form.hidden_tag()}}
+                <div class="form-group">
+                  <p>Email:</p>
+                  {{form.email(class="form-control")}}
+                  {% for error in form.errors.email %}
+                    <span style="color: red;">[{{error}}]</span>
+                  {% endfor %}<br>
+                </div>
+                <div class="form-group">
+                  <p>Name:</p>
+                  {{form.name(class="form-control")}}
+                </div>
+              <input id="rt-signup" type="submit" value="GET PILOT" class="btn btn-success no-top rt-signup"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div class="recordtrac">
 <div class="jumbotron white_back no-bottom">
   <div class="container">
-    <div class="row" style="margin-top: 4em;">
-      <div class="col-lg-7 col-lg-offset-1 white_back" style="padding: 1.75em;">        
-        <div class="row">
-          <div class="col-lg-2">
+
+    <div class="row  shim_nav shim_RT">
+      <div class="col-lg-6 col-lg-offset-1 shim_top">
+        <div class="row shim_top">
+          <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
             <img class="img-responsive" src="{{ url_for('static', filename='images/recordtrac_logo_notext.png') }}" alt="recordtrac logo">
           </div>
-          <div class="col-lg-10">
+          <div class="ol-sm-10 col-md-10 col-lg-10">
             <h1>RecordTrac</h1>
-            <h2 class="title color">Online public records, open to everyone</h2>
-            <p>RecordTrac is a new, open platform that makes it easy for agencies to communicate about public requests in a compliant, transparent, and efficient manner.</p>
-          </div>
-           <div class="col-lg-10">
-             <button type="button" class="btn btn-danger no-top" onclick="window.open('/recordtrac_signup', '_blank')">REQUEST DEMO</button>
-            <div class="title_tag_wht">
+            <h3>Open Public Records</h3>
+            <button type="button" class="btn btn-danger no-top" onclick="window.open('/recordtrac_signup', '_blank')">REQUEST DEMO</button>
+            <h5>
               <a href="/products/recordtrac" target="_blank" class="banner">PRODUCT SHEET (PDF)</a>&nbsp;&nbsp;<span class="glyphicon glyphicon-save"></span>
-           </div> 
+            </h5>
           </div>
         </div>
-
       </div>
       <div class="col-lg-4" style="padding-left: .75em;">
         <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/generic_request.png') }}" alt="recordtrac">
       </div>
-    </div> 
+    </div>
   </div>
-  <div style="text-align: right;">
-    <a class="citation" href="http://www.flickr.com/photos/21115027@N03/5837980802/in/photolist-9TTbiq-ai7YDS-aZjTXv-eaQywa-8T45NM-cVHs2u-8BZaCT-7QZKBi-aa3KE2-7xDRCd-dHuDb3-aYMTF6-edMCMq-9pi6Zr-doanLv-c64115-bQwK2i-9HLoyf-fNgfUh-bX1bqr-bX1bbR-cenwWC-9Yiwuf-8q2f2c-8vin5T-dciy51-aYMU9Z-8u9PjP-7KyTCu-87FbsA-9rtyjJ-8BxAVC-isdnGh-8XVfic-cfKJSC-8U2usA-8vmqty-8vmqw7-7z6QM3-7QMoJS-85yaN8-7VVajE-dWahqB-9dj7ix-cmRojW-88TG4B-hysXMo-hyso7j-hysdb6-hysdcZ-hysXGd">source:flickr.com, phrawr;</a> <a class="citation" href="http://creativecommons.org/licenses/by/2.0/">CC by 2.0</a>
+</div>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row shim rt_counter">
+
+      <div class="col-lg-3 col-lg-offset-1">
+        <h1 class="color  text-right">5492</h1>
+      </div>
+      <div class="col-lg-4">
+        <p>Records Requests Processed</p>
+      </div>
+      <div class="col-lg-2">
+            <h5>
+              <a href="#more" class="banner">LEARN HOW</a>&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down"></span>
+            </h5>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="more" class="jumbotron white_back video">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <iframe src="//fast.wistia.net/embed/iframe/ykqdie3no0?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="700" height="422"></iframe><script src="//fast.wistia.net/assets/external/iframe-api-v1.js"></script>
+        <a href="//fast.wistia.net/embed/iframe/ykqdie3no0?popover=true" class="wistia-popover[height=478,playerColor=4ae0c9,width=800] title rt_link">Watch Video</a>
+        <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+      </div>
+    </div>
   </div>
 </div>
 <div id ="features" class="jumbotron">
@@ -41,10 +98,12 @@
     </div>
   </div>
     <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
-      <div class="col-lg-5 col-lg-offset-1" style="text-align: right;">
-      <h2 class="title color">Open records</h2>
-      <h3 class="title">Next-gen open government</h3>
-      <p class="left" style="padding-top: .75em;"> Eliminate duplicate requests. Anyone &dash; requestor, agency, community member &dash; can review current or past requests by keyword, status or department.</p>
+      <div class="col-lg-5 col-lg-offset-1">
+        <div class="feature_text">
+          <h2 class="title color">Open records</h2>
+          <h4 class="title">Next-gen open government</h4>
+          <p class="left" style="padding-top: .75em;"> Eliminate duplicate requests. Anyone &dash; requestor, agency, community member &dash; can review current or past requests by keyword, status or department.</p>
+        </div>
       </div>
       <div class="col-lg-6" style="padding-left: .75em;">
         <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/review_requests.png') }}" alt="review requests">
@@ -59,9 +118,9 @@
         <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/manage_requests.png') }}" alt="track requests">
       </div>      
       <div class="col-lg-5">
-        <div>
+        <div class="feature_text">
           <h2 class="title color">Manage responses</h2>
-          <h3 class="title">Streamline the response</h3>
+          <h4 class="title">Streamline the response</h4>
           <p class="right" style="padding-top: .75em;">Reduce the time spent on requests. Staff can respond to requests through a simple interface - allowing them to respond quickly with relevant information. </p>
         </div>
       </div>
@@ -71,10 +130,12 @@
 <div class="jumbotron">
   <div class="container">
     <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
-      <div class="col-lg-5 col-lg-offset-1" style="text-align: right;">
-        <h2 class="title color">Measure response</h2>
-        <h3 class="title">Better allocate resources and effort.</h3>
-        <p class="left" style="padding-top: .75em;">Review response data for easy management. See total requests as well as average response time by department.</p>
+      <div class="col-lg-5 col-lg-offset-1">
+          <div class="feature_text">
+            <h2 class="title color">Measure response</h2>
+            <h4 class="title">Better allocate resources and effort.</h4>
+            <p class="left" style="padding-top: .75em;">Review response data for easy management. See total requests as well as average response time by department.</p>
+          </div>
       </div>
       <div class="col-lg-6">
         <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/request_metrics.png') }}" alt="track requests">
@@ -89,9 +150,11 @@
         <img class="img-responsive shadow" style="display: inline;" src="{{ url_for('static', filename='images/track_requests.png') }}" alt="track requests">
       </div>
       <div class="col-lg-5">
-        <h2 class="title color">Track and trace requests</h2>
-        <h3 class="title">Reduce fines from late responses</h3>
-        <p class="right" style="padding-top: .75em;">Track dates, requester, government point of contact, and correspondence. Sign up to receive email updates about a specific request.</p>
+        <div class="feature_text">
+          <h2 class="title color">Track and trace requests</h2>
+          <h4 class="title">Reduce fines from late responses</h4>
+          <p class="right" style="padding-top: .75em;">Track dates, requester, government point of contact, and correspondence. Sign up to receive email updates about a specific request.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -100,10 +163,12 @@
 <div class="jumbotron">
   <div class="container">
     <div class="row" style="margin-top: 1em; margin-bottom: 2em;">
-      <div class="col-lg-6" style="text-align: right;">
-        <h2 class="title color">Make requests online</h2>
-        <h3 class="title">Digitize and streamline from the start</h3>
-        <p style="padding-top: .75em;">Individuals can make requests directed at specific departments and leave their contact information for follow up.</p>
+      <div class="col-lg-6">
+        <div class="feature_text">
+          <h2 class="title color">Make requests online</h2>
+          <h4 class="title">Digitize and streamline from the start</h4>
+          <p style="padding-top: .75em;">Individuals can make requests directed at specific departments and leave their contact information for follow up.</p>
+        </div>
       </div>
       <div class="col-lg-6">
         <img class="img-responsive" style="display: inline;" src="{{ url_for('static', filename='images/make_requests.png') }}" alt="make requests">
@@ -128,7 +193,7 @@
           <h2 class="title">Oakland, CA</h2>
         <p>RecordTrac has helped the City of Oakland process over 2,000 public requests across all city departments in its first year of use. It also helped the City save hundreds of thousands of dollars compared with their previous solution.</p>
         <h2 class=" title shim shim_top"><em>“The RecordTrac application is so much better than the cumbersome old system, it's really a tremendous difference.  It saves me time, mostly from the far more nimble interface... the public end-users also find it much easier to work with.”</em></h2>
-        <h3 class=" title " >Jim Bondi<br>City of Oakland</h3>
+        <h4 class=" title " >Jim Bondi<br>City of Oakland</h4>
         <h2 style="font-size: 1.75em; padding-top: 1.5em;"><a class="title rt_link" href="http://records.oaklandnet.com/landing" target="_blank">See RecordTrac in Action</a></h2>
       </div>
       </div>
@@ -146,25 +211,25 @@
 		</div>
 	</div>
     <div class="row" style="margin-top: 1em; margin-bottom: 2.5em;">    	
-      <div class="col-lg-3">
+      <div class="col-lg-3 news-item">
         <div>
           <p>"Civic App of the Year (2013)"</p>
           <a href="http://awards.govfresh.com/2013-govfresh-awards/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/govfresh.png') }}" alt="govfresh logo"></a>
         </div>
       </div>
-      <div class="col-lg-3 ">
+      <div class="col-lg-3 news-item ">
         <div>
           <p>"...goals have included increasing efficiency and becoming more transparent and RecordTrac does both."</p>
           <a href="http://oaklandlocal.com/2013/10/oaktech-citys-new-recordtrac-app-launches-built-by-code-for-america-fellows/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/oakland_local.png') }}" alt="Oakland Local logo"></a>
         </div>
       </div>
-       <div class="col-lg-3">
+       <div class="col-lg-3 news-item">
         <div>
           <p>"'It's access to information.'"</p>
           <a href="http://arstechnica.com/business/2013/03/urban-activists-hack-their-way-towards-open-government/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/ars-technica-logo.png') }}" alt="ars-technica logo"></a>
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 news-item">
         <div>
           <p>"[RecordTrac] addresses citizens’ expectations of a government that responds quickly to their needs."</p>
           <a href="http://oaklandnorth.net/2013/10/02/oakland-code-for-america-unveil-public-records-program/" target="_blank"><img class="img-responsive shim" style="display: inline;" src="{{ url_for('static', filename='images/oaklandnorth_logo.png') }}" alt="Oakland North logo"></a>
@@ -178,7 +243,6 @@
     <div class="row" style="margin-top: 4em; margin-bottom: 5em; text-align: center;">      
       <div class="col-lg-12">
           <h1 class="title color">I want RecordTrac in my city.</h1>
-          <br>
           <button type="button" class="btn btn-danger" onclick="window.open('/recordtrac_signup', '_blank')">GET RECORDTRAC</button>
       </div>
     </div>

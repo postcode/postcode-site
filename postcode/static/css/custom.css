@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 @import url(http://fonts.googleapis.com/css?family=Lato);
 
@@ -33,15 +33,8 @@ $DarkGray: #636363;
   font-family: 'Montserrat', sans-serif;
 }
 }
-@media(min-width:992px){
-  h1 {
-  color: #636363;
-  font-size: 4em;
-  letter-spacing: .05em;
-  margin: 0em;
-  font-family: 'Montserrat', sans-serif;
-}
-}
+
+
 @media(min-width:1200px){
   h1 {
   color: #636363;
@@ -68,6 +61,10 @@ h3{
   margin-bottom: .5em;
   margin-top: 0em; 
   padding: 0px;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #939597;
 }
 h5 {
   color: #636363;
@@ -106,10 +103,20 @@ p .sml_quote{
 .shim_r{
   margin-right: .75em;
 }
+.shim_nav{
+  margin-top: 75px;
+}
+.shim_video{
+  padding-top: 1em;
+  padding-bottom: 5em;
+}
 .white{
   color: white;
 }
 
+.bio{
+  margin-top: 1em;
+}
 
 .name{
   font-family: 'Montserrat', sans-serif;
@@ -118,6 +125,11 @@ p .sml_quote{
   margin-top: 5px;
   padding: 0px;
   line-height: 1em;
+  width
+}
+.bio img {
+  width: 150px;
+  padding-top: .5em;
 }
 
 .position{
@@ -162,6 +174,12 @@ p .sml_quote{
     filter:alpha(opacity=98); /* For IE8 and earlier */
 }
 
+.navbar-brand{
+  color: #939597;
+  font-family:'Montserrat', sans-serif;
+  font-size: 1.35em;
+}
+
 /* footer */
 
 footer{
@@ -169,6 +187,10 @@ footer{
   border-top: 1px solid #C7C7C7;
   padding: 15px;
   padding-bottom: 25px;
+}
+
+footer h2{
+  padding-top: 1em;
 }
 
 /* link */
@@ -267,7 +289,39 @@ a.rt_link:active {color: #E57755;}
     color: #939597;
 }
 .recordtrac h2 {
-    margin-bottom: 1.25em;
+    margin-bottom: .1em;
+}
+.recordtrac h3{
+  border: none;
+  color: #BABABA;  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45em; 
+  letter-spacing: .14em;
+  margin: 0em;
+  word-spacing: .23em;
+
+}
+.recordtrac h4{
+  border: none;
+  color: #939597;  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15em;
+  margin-bottom: .5em;
+  padding: 0em; 
+}
+.recordtrac h5{ 
+  border: none;
+  color: #939597; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: .75em; 
+  margin-top: 1em;
+  margin-bottom: .75em;
+  padding: .25em .6em;
+}
+
+.recordtrac p{
+  margin-top: .75em;
+  margin-bottom: .75em;
 }
 .recordtrac p.right{
   margin: 0em 2em .75em 0em;
@@ -277,19 +331,99 @@ a.rt_link:active {color: #E57755;}
   margin: 0em 0em .75em 2em;
 }
 
+.recordtrac button{
+  margin-top: 2em;
+}
+
+.rt_counter p{
+  margin-top: 1em;
+}
+
+.shim_RT{
+  margin-top: 5.5em;
+  margin-bottom: 2em;
+}
+
+.recordtrac .video{
+  margin: 3.5em 0em 2.5em;
+}
+.modal-content{
+  padding: 30px 50px 50px 50px;
+}
+.newRT{
+  background-color: #EC916F;
+  margin-top: 5em;
+  padding: .75em;
+}
+.newRT h2{
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  font-size: 3em; 
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.newRT h4{
+  color: white;
+  font-family:'Open Sans', sans-serif;
+  font-size: 2em; 
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-top: .5em;
+  margin-bottom: .6em;
+}
+.newRT p{
+  color: white;
+  display: inline;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.newRT a {
+  color: white;
+}
+.rtform{
+  margin-bottom: 1.3em; 
+
+}
+.modal-content img{
+  width: 20px;
+  display: inline;
+  margin-right: .5em;
+}
 
 
+
+/* promptly */
 .promptly {
   margin: 0em 1em 1em 0em; 
 }
 .promptly .color{
-  color: #5c7dbe;
+  color: #789FD3;
 }
 .promptly h1 {
-  font-size: 1.25em;
+    color: #939597;
 }
 .promptly h2 {
-  font-size: .9em;
+    margin-bottom: .1em;
+}
+.promptly h3{
+  border: none;
+  color: #BABABA;  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.45em; 
+  letter-spacing: .14em;
+  margin: 0em;
+  word-spacing: .23em;
+
+}
+.promptly h4{
+  font-size: 1.25em;
+}
+.promptly h5{
+  font-size: .75em;  
+}
+.promptly button{
+  margin-top: 2em;
 }
 
 .cityvoice {
@@ -298,14 +432,17 @@ a.rt_link:active {color: #E57755;}
 .cityvoice .color{
   color: #6cc5ad;
 }
-.cityvoice h1 {
+.cityvoice h4 {
   font-size: 1.25em;
 }
-.cityvoice h2 {
+.cityvoice h5 {
   font-size: .9em;
 }
 
-
+/* legal pages */
+.privacy{
+  margin: 8em 0em 10em 0em;
+}
 
 
 /* Buttons & Tags */
@@ -313,13 +450,19 @@ a.rt_link:active {color: #E57755;}
 .glyphicon-save{
     color: #636363;
 }
+.glyphicon-chevron-down{
+    color: #636363;
+}
 .glyphicon-ok {
   color: #939597;
   margin-right: .75em;
 }
 
+.btn {
+  margin-top: 10px;
+}
 .btn-primary{
-  background: #5c7dbe;
+  background: #789FD3;
   border: #5c7dbe;
   font-size: .75em;
   padding: .4em 1.3em;
@@ -330,8 +473,8 @@ a.rt_link:active {color: #E57755;}
   border: none;
 } 
 .btn-success{
-  background: #6cc5ad;
-  border: #6cc5ad;
+  background: #86CDB2;
+  border: #86CDB2;
   font-size: .75em;
   padding: .4em 1.3em;
   margin-top: .75em;
@@ -343,7 +486,7 @@ a.rt_link:active {color: #E57755;}
 .btn-danger{
   background: #E57755;
   border: #E57755;
-  font-size: 1em;
+  font-size: .75em;
   padding: .4em 1.3em;
   margin-top: .75em;
 }
@@ -359,6 +502,7 @@ a.rt_link:active {color: #E57755;}
 
 .no-bottom {
   margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .btn-inverse{
@@ -381,12 +525,12 @@ a.rt_link:active {color: #E57755;}
 
 .contact_button{
 background: white;
-border: 2px solid #636363;
+border: 1px solid #939597;
 display: inline;
 -moz-border-radius: 3px;
 -webkit-border-radius: 3px;
 border-radius: 3px; /* future proofing */
-padding: 10px 15px;
+padding: 4px 7px;
 }
 
 .title_tag{
@@ -395,6 +539,7 @@ color: white;
 display: inline; 
 font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
+margin-top: 1em;
 padding: .25em .6em;
 -moz-box-shadow:    0px 0px 25px -3px #FFFFFF;
 -webkit-box-shadow: 0px 0px 25px -3px #FFFFFF;
@@ -408,15 +553,60 @@ color: #939597;
 display: inline; 
 font-family: 'Montserrat', sans-serif;
 font-size: .75em; 
-margin-top: 10px;
+margin-top: 1em;
+margin-bottom: .75em;
 padding: .25em .6em;
 }
-/* 
--moz-border-radius: 3px;
--webkit-border-radius: 3px;
-border-radius: 3px; 
-*/
+
+/* Front Page */
+.front-padding {
+  padding-top: 1em; 
+  padding-bottom: 1.5em;  
+ }
+
+ .feature_text {
+  text-align: left;
+ }
+
+ @media(min-width:992px){
+  h1 {
+  color: #636363;
+  font-size: 4em;
+  letter-spacing: .05em;
+  margin: 0em;
+  font-family: 'Montserrat', sans-serif;
+  }
+  .front-padding {
+    padding-top: 13em;
+    padding-bottom: 1.5em;
+  }
 }
+
+.sign-up-logo {
+  vertical-align: top;
+}
+
+.form-group {
+  margin-bottom: 0px;
+  line-height: 1.1em;
+}
+
+.rt-signup {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+.signup-footer {
+  margin-top: 1.75em;
+  padding-bottom: 3em;
+}
+
+
+
+
+
+
+
 
 
 
