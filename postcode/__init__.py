@@ -14,6 +14,7 @@ app = Flask(__name__)
 app.debug = True
 app.config.from_object(__name__)
 app.config['SECRET_KEY'] = environ['SECRET_KEY']
-
+app.config['RECAPTCHA_PUBLIC_KEY'] = environ['RECAPTCHA_PUBLIC_KEY']
+app.config['RECAPTCHA_PRIVATE_KEY'] = environ['RECAPTCHA_PRIVATE_KEY']
 
 init_db()

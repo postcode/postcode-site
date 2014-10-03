@@ -27,6 +27,16 @@
                   <p>Name:</p>
                   {{form.name(class="form-control")}}
                 </div>
+                <div class="form-group">
+                    {% for error in form.recaptcha.errors %}
+                      <div class="recaptcha-error">
+                        {{ error }}
+                      </div>
+                    {% endfor %}
+                  <div class="areyouhuman"> 
+                    {{ form.recaptcha(class="form-control") }}
+                  </div>
+                </div>
               <input id="rt-signup" type="submit" value="GET PILOT" class="btn btn-success no-top rt-signup"></p>
           </form>
         </div>
