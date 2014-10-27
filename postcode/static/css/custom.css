@@ -605,6 +605,28 @@ padding: .25em .6em;
   display: none;
 }
 
+.nr-banner {
+  margin-top: 60px;
+  background-color: #EC916F;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+}
+
+.nr-banner p {
+  color: #fff;
+  font-size: 28px;
+  padding: 5px;
+}
+
+.nr-banner a {
+  color: #fff;
+  font-style: italic;
+  padding-left: 15px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 
 
 
