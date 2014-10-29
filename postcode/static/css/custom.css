@@ -271,7 +271,7 @@ a.rt_link:active {color: #E57755;}
 }
 
 .recordtrac {
-  margin: 0em 1em 1em 0em;
+  margin: 0em 1em 0em 0em;
 }
 .recordtrac .title{
   font-family: 'Lato', sans-serif;
@@ -352,8 +352,7 @@ a.rt_link:active {color: #E57755;}
 }
 .newRT{
   background-color: #EC916F;
-  margin-top: 5em;
-  padding: .75em;
+  padding: 2.5em 1.5em;
 }
 .newRT h2{
   color: white;
@@ -606,10 +605,10 @@ padding: .25em .6em;
 }
 
 .nr-banner {
-  margin-top: 60px;
+  margin-top: 50px;
   background-color: #EC916F;
   color: #fff;
-  padding: 5px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -617,6 +616,7 @@ padding: .25em .6em;
   color: #fff;
   font-size: 28px;
   padding: 5px;
+  margin: 0.2em;
 }
 
 .nr-banner a {
