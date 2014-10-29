@@ -610,6 +610,7 @@ padding: .25em .6em;
   color: #fff;
   padding: 0px;
   text-align: center;
+  z-index: 1;
 }
 
 .nr-banner p {
