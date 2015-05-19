@@ -36,18 +36,7 @@ def product_page(product):
 
 @app.route('/nextrequest', methods = ['GET', 'POST'])
 def nextrequest():
-	form = signupForm()
-	try:
-		if request.method == 'POST' and form.validate():
-			user = Signup(form.email.data, form.name.data)
-			db_session.add(user)
-			db_session.commit()
-			signup_email(user)
-			return render_template('recordtrac-confirm.html', ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id)
-		return render_template('nextrequest.html', ga_tracking_code = ga_tracking_code, remarketing_id=remarketing_id, form=form)
-	except:
-                app.logger.error(traceback.format_exception(*sys.exc_info()))
-		return index()
+	return redirect("https://www.nextrequest.com", code=302)
 
 def signup_email(user):
 	sg = sendgrid.SendGridClient(os.environ['SENDGRID_USERNAME'], os.environ['SENDGRID_PASSWORD'])
